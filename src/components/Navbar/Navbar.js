@@ -4,57 +4,63 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Navigation = () => {
+  const location = useLocation();
+
   return (
     <Navbar expand="sm" className="nav-bar fixed-top">
       <Container className="nav-bar-container">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-
-            <NavLink 
-            exact="true" 
-            activeClassName="active" 
-            className="nav-bar-button nav-bar-active"
-            to="/" 
+            <NavLink
+              exact
+              className={`nav-bar-button ${
+                location.pathname === '/' ? 'nav-bar-active' : ''
+              }`}
+              to="/"
             >
               Home
             </NavLink>
 
-            <NavLink 
-            exact="true" 
-            activeClassName="active" 
-            className="nav-bar-button"
-            to="/experience" 
+            <NavLink
+              exact
+              className={`nav-bar-button ${
+                location.pathname === '/experience' ? 'nav-bar-active' : ''
+              }`}
+              to="/experience"
             >
               Experience
             </NavLink>
 
-            <NavLink 
-            exact="true" 
-            activeClassName="active" 
-            className="nav-bar-button"
-            to="/project" 
+            <NavLink
+              exact
+              className={`nav-bar-button ${
+                location.pathname === '/project' ? 'nav-bar-active' : ''
+              }`}
+              to="/project"
             >
               Project
             </NavLink>
 
-            <NavLink 
-            exact="true" 
-            activeClassName="active" 
-            className="nav-bar-button"
-            to="/education" 
+            <NavLink
+              exact
+              className={`nav-bar-button ${
+                location.pathname === '/education' ? 'nav-bar-active' : ''
+              }`}
+              to="/education"
             >
               Education
             </NavLink>
 
-            <NavLink 
-            exact="true" 
-            activeClassName="active" 
-            className="nav-bar-button"
-            to="/contact" 
+            <NavLink
+              exact
+              className={`nav-bar-button ${
+                location.pathname === '/contact' ? 'nav-bar-active' : ''
+              }`}
+              to="/contact"
             >
               Contact
             </NavLink>
@@ -63,16 +69,6 @@ const Navigation = () => {
       </Container>
     </Navbar>
   );
-  /*return(
-  <nav>
-    <NavLink exact="true" activeClassname="active" to="/">
-      Home
-    </NavLink>
-    <NavLink exact="true" activeClassname="active" to="/contact">
-      Contact
-    </NavLink>
-  </nav>
-  );*/
 };
 
 export default Navigation;

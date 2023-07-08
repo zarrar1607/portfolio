@@ -1,10 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Layout from './components/Layout/Layout';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home/Home';
+//import Experience from './components/Experience/Experience';
+//import Project from './components/Project/Project';
+//import Education from './components/Education/Education';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/experience" element={<Home />} />
+          <Route path="/project" element={<Home />} />
+          <Route path="/education" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
+
+
+
+/*
+<div className="App">
       <header className="App-header">
+      <Home />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,9 +43,10 @@ function App() {
         >
           Learn React
         </a>
+        <p>
+          ABCD
+        </p>
       </header>
     </div>
-  );
-}
-
-export default App;
+*/
+//>npm i @emailjs/browser - contact form

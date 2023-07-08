@@ -6,6 +6,9 @@ import Home from './components/Home/Home';
 //import Project from './components/Project/Project';
 //import Education from './components/Education/Education';
 import Contact from './components/Contact/Contact';
+import Experience from './components/Experience/Experience';
+import Project from './components/Project/Project';
+import Education from './components/Education/Education';
 
 function App() {
   return (
@@ -13,9 +16,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/experience" element={<Home />} />
-          <Route path="/project" element={<Home />} />
-          <Route path="/education" element={<Home />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/education" element={<Education />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>

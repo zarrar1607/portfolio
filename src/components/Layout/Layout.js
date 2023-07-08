@@ -2,7 +2,6 @@ import React from 'react';
 import Navigation from '../Navbar/Navbar.js';
 import Footer from '../Footer/Footer.js'
 import './Layout.scss';
-import ContentSection from '../ContentSection/ContentSection.js';
 import { Outlet } from 'react-router-dom';
 
 
@@ -35,18 +34,18 @@ import { Outlet } from 'react-router-dom';
   );
 };*/
 const Layout = () => {
-  return(
+  return (
     <div>
       <header>
-          <Navigation />
+        <Navigation />
       </header>
-
-      <Outlet />
-      
+      <section className='content_section'>
+        <Outlet />
+      </section>
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
-      
+
     </div>
   );
 };

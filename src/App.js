@@ -1,10 +1,8 @@
 import './App.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from './components/Layout/Layout';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
-//import Experience from './components/Experience/Experience';
-//import Project from './components/Project/Project';
-//import Education from './components/Education/Education';
 import Contact from './components/Contact/Contact';
 import Experience from './components/Experience/Experience';
 import Project from './components/Project/Project';

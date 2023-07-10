@@ -2,27 +2,38 @@ import './Home.scss'
 import React from 'react';
 import Logo from '../ProfileImage';
 import { Col, Container, Row } from 'react-bootstrap';
-import { useState } from 'react';
+import WordCloud from './WordCloud';
 
-
-
-import './WordGroup.scss';
-import Example from './WordCloud';
-import MyWordCloud from './myWordCloud';
-import WordCloud from './WordCloudv2';
+const words = [
+    { text: 'Hello', value: 10 },
+    { text: 'World', value: 20 },
+    { text: 'React', value: 15 },
+    { text: 'JavaScript', value: 12 },
+    { text: 'CSS', value: 8 },
+    { text: 'HTML', value: 20 },
+    { text: 'OpenAI', value: 18 },
+    { text: 'Chatbot', value: 14 },
+    { text: 'AI', value: 16 },
+    { text: 'Machine Learning', value: 13 },
+    { text: 'Web Development', value: 11 },
+    { text: 'Design', value: 9 },
+    { text: 'Frontend', value: 17 },
+    { text: 'Backend', value: 7 },
+    { text: 'Database', value: 10 },
+    { text: 'API', value: 19 },
+    { text: 'Cloud', value: 15 },
+    { text: 'Server', value: 8 },
+    { text: 'Security', value: 12 },
+    { text: 'Testing', value: 16 },
+  ];
 
 
 const Home = () => {
-    const words = [
-        { text: 'Hello', value: 10 },
-        { text: 'World', value: 20 },
-        // Add more word objects as needed
-      ];
-      
+    
     return (
-        
+
         <>
-            <Container className='jumbotron'>
+            <Container className='jumbotron' fluid>
                 <Row className=''>
                     <Col xs={12} md={6} className=''>
                         <Logo />
@@ -38,36 +49,11 @@ const Home = () => {
                 </Row>
             </Container>
 
-            <Container className='jumbotron border'>
-                {/*<div class="word-cloud">
-                    <span class="word">Hello</span>
-                    <span class="word">World</span>
-                    <span class="word">React</span>
-                    <span class="word">JavaScript</span>
-                    <span class="word">CSS</span>
-                    <span class="word">HTML</span>
-    </div>*/}
-                {/*<div>
-
-                    <Example
-                        words={words}
-                        width={600}
-                        height={400}
-                        showControls={true}
-                    />
-</div>*/}
-                {/*<Row className='border'>
-                    <MyWordCloud />
-</Row>*/}
-        
-                <WordCloud
-        width={500}
-        height={200}
-      />
-      {/*//'archimedean' | 'rectangular';*/}
+            <Container className='jumbotron border' fluid>
+                <WordCloud words={words}/>
             </Container>
 
-            <Container className='jumbotron border'>
+            <Container className='jumbotron border' fluid>
                 <Row className='border'>
                     <Col xs={12} md={6} className='border'>
                         <Logo />

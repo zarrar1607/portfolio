@@ -9,11 +9,18 @@ import { useState } from 'react';
 import './WordGroup.scss';
 import Example from './WordCloud';
 import MyWordCloud from './myWordCloud';
+import WordCloud from './WordCloudv2';
 
 
 const Home = () => {
-
+    const words = [
+        { text: 'Hello', value: 10 },
+        { text: 'World', value: 20 },
+        // Add more word objects as needed
+      ];
+      
     return (
+        
         <>
             <Container className='jumbotron'>
                 <Row className=''>
@@ -39,7 +46,7 @@ const Home = () => {
                     <span class="word">JavaScript</span>
                     <span class="word">CSS</span>
                     <span class="word">HTML</span>
-                </div>
+    </div>*/}
                 {/*<div>
 
                     <Example
@@ -48,10 +55,16 @@ const Home = () => {
                         height={400}
                         showControls={true}
                     />
-    </div>*/}
-                <div>
+</div>*/}
+                {/*<Row className='border'>
                     <MyWordCloud />
-                </div>
+</Row>*/}
+        
+                <WordCloud
+        width={500}
+        height={200}
+      />
+      {/*//'archimedean' | 'rectangular';*/}
             </Container>
 
             <Container className='jumbotron border'>

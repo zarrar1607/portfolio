@@ -10,6 +10,20 @@ const words = [
   { text: 'JavaScript', value: 12 },
   { text: 'CSS', value: 8 },
   { text: 'HTML', value: 6 },
+  { text: 'OpenAI', value: 18 },
+  { text: 'Chatbot', value: 14 },
+  { text: 'AI', value: 16 },
+  { text: 'Machine Learning', value: 13 },
+  { text: 'Web Development', value: 11 },
+  { text: 'Design', value: 9 },
+  { text: 'Frontend', value: 17 },
+  { text: 'Backend', value: 7 },
+  { text: 'Database', value: 10 },
+  { text: 'API', value: 19 },
+  { text: 'Cloud', value: 15 },
+  { text: 'Server', value: 8 },
+  { text: 'Security', value: 12 },
+  { text: 'Testing', value: 16 },
 ];
 
 const colors = ['#143059', '#2F6B9A', '#82a6c2'];
@@ -41,7 +55,7 @@ export default function MyWordCloud() {
     positions[centerWord.text] = { x: 0, y: 0 };
 
     // Calculate positions for surrounding words
-    const radius = 50; // Adjust the radius as needed
+    const radius = 150; // Adjust the radius as needed
     const angleStep = (2 * Math.PI) / (sortedWords.length - 1);
 
     for (let i = 1; i < sortedWords.length; i++) {

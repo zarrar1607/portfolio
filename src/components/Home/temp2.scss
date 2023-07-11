@@ -1,0 +1,35 @@
+.wordcloud {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    width: 100%;
+    height: 100%;
+  }
+  .wordcloud svg {
+    cursor: default;
+    
+    width: 100%;
+    height: 100%;
+  }
+  
+  .wordcloud textarea {
+    min-height: 100px;
+  }
+  
+  .wordEffect {
+    transition: font-size 0.3s ease;
+  }
+  
+  .wordEffect:hover {
+    font-size: 150%;
+  }
+  
+  
+  .title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 25%;
+  }
+  

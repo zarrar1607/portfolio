@@ -3,7 +3,6 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 .row{
     padding-top: 5px;
@@ -27,16 +26,4 @@
     backdrop-filter: blur(8px);
     padding: 1rem;
     font-size: 1.3rem;
-}
-
-.skills{
-    height: 100vh;
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-
-    .title{
-        margin-top: 4.5rem;
-    }
 }

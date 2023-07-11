@@ -3,7 +3,6 @@ import React from 'react';
 import Logo from '../ProfileImage';
 import { Col, Container, Row } from 'react-bootstrap';
 import WordCloud from './WordCloud';
-import { useRef, useState, useEffect } from 'react';
 
 const words = [
     { text: 'Hello', value: 10 },
@@ -31,24 +30,7 @@ const words = [
 
 
 const Home = () => {
-    const impCol = useRef(null);
-    const [parentSize, setParentSize] = useState({ width: 0, height: 0 });
-
-
-    useEffect(() => {
-        const handleResize = () => {
-            if (impCol.current) {
-                const { width, height } = impCol.current.parentNode.getBoundingClientRect();
-                setParentSize({ width, height });
-            }
-        };
-
-        handleResize();
-
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
+    
     return (
 
         <>
@@ -68,29 +50,8 @@ const Home = () => {
                 </Row>
             </Container>
 
-            <Container className='jumbotron border skills' fluid>
-                <Row className='w-100 title border'>
-                    <Col>
-                        <h1 className='display-4 border'>Skills{parentSize.width - 5} x {parentSize.height - 15}</h1>
-                    </Col>
-                </Row>
-                <Row className='w-100 border flex-grow-1' style={{ maxHeight: '100%', maxWidth: '100%' }}>
-                    <Col className='border' style={{ padding: 0, border: 0, }} ref={impCol}>
-                        <WordCloud words={words} title={'Skills'} finalWidth = {parentSize.width - 5} finalHeight = {parentSize.height * 0.85}/>
-                    </Col>
-                </Row>
-            </Container>
-
-
             <Container className='jumbotron border' fluid>
-                <Row className='border'>
-                    <Col >
-                        <h1 className='display-4 border'>
-                            Skills
-                        </h1>
-                    </Col>
-                </Row>
-                <WordCloud words={words} title={'Skills'} />
+                <WordCloud words={words} title = {'Skills'}/>
             </Container>
 
             <Container className='jumbotron border' fluid>

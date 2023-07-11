@@ -86,7 +86,7 @@ export default function WordCloud(props) {
                         height={wordCloudSize.height}*/
                         /*width={props.finalWidth}
         height={props.finalHeight}*/}
-                {props.finalWidth > 0 && props.finalHeight > 0 && (
+                {props.finalWidth  && props.finalHeight  && (
                     <Wordcloud
                         words={words}
                         width={props.finalWidth}

@@ -26,6 +26,7 @@ const words = [
     { text: 'Server', value: 8 },
     { text: 'Security', value: 12 },
     { text: 'Testing', value: 16 },
+    
 ];
 
 
@@ -34,17 +35,23 @@ const Home = () => {
     const impCol = useRef(null);
     const [parentSize, setParentSize] = useState({ width: 0, height: 0 });
 
+    const [resizing, setResizing] = useState(false);
+
+    const handleResize = () => {
+        if (!resizing) {
+            setResizing(true);
+            setTimeout(() => {
+                if (impCol.current) {
+                    const { width, height } = impCol.current.parentNode.getBoundingClientRect();
+                    setParentSize({ width, height });
+                    setResizing(false);
+                }
+            }, 500); // Adjust the delay as needed
+        }
+    };
 
     useEffect(() => {
-        const handleResize = () => {
-            if (impCol.current) {
-                const { width, height } = impCol.current.parentNode.getBoundingClientRect();
-                setParentSize({ width, height });
-            }
-        };
-
         handleResize();
-
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
@@ -76,7 +83,7 @@ const Home = () => {
                 </Row>
                 <Row className='w-100 border flex-grow-1' style={{ maxHeight: '100%', maxWidth: '100%' }}>
                     <Col className='border' style={{ padding: 0, border: 0, }} ref={impCol}>
-                        <WordCloud words={words} title={'Skills'} finalWidth = {parentSize.width - 5} finalHeight = {parentSize.height * 0.85}/>
+                        <WordCloud words={words} title={'Skills'} finalWidth={parentSize.width - 5} finalHeight={parentSize.height * 0.85} />
                     </Col>
                 </Row>
             </Container>

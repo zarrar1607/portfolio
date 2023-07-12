@@ -13,48 +13,14 @@ https://react-wordcloud.netlify.app/readme#install
 
 export default function WordCloud(props) {
     const words = props.words
-    const [spiralType, setSpiralType] = useState('archimedean');
+    const [spiralType, setSpiralType] = useState('archimedean');{/*'archimedean'*/}
     const [withRotation, setWithRotation] = useState(false);
-    const wordCloudRef = useRef(null);
     
-
-    const [wordCloudSize, setWordCloudSize] = useState({ width: 0, height: 0 });
-    useEffect(() => {
-        const handleResize = () => {
-          if (wordCloudRef.current) {
-            const { width, height } = wordCloudRef.current.parentNode.getBoundingClientRect();
-            setWordCloudSize({ width, height });
-          }
-        };
-    
-        handleResize();
-    
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-      }, []);
-
-    const wordFreq = (text) => {
-        const words = text.replace(/\./g, '').split(/\s/);
-        const freqMap = {};
-
-        for (const w of words) {
-            if (!freqMap[w]) freqMap[w] = 0;
-            freqMap[w] += 1;
-        }
-
-        return Object.keys(freqMap).map((word) => ({ text: word, value: freqMap[word] }));
-    };
-
     const getRotationDegree = () => {
         const rand = Math.random();
         const degree = rand > 0.5 ? 60 : -60;
         return rand * degree;
     };
-
-    const fontScale = scaleLog({
-        domain: [Math.min(...words.map((w) => w.value)), Math.max(...words.map((w) => w.value))],
-        range: [10, 100],
-    });
 
     const [minFontSize, setMinFontSize] = useState(12);
     const [maxFontSize, setMaxFontSize] = useState(36);
@@ -113,49 +79,40 @@ export default function WordCloud(props) {
 
 
     return (
-        <div className="wordcloud border">
-            <Row className='border title'>
-                <Col>
-                    <h1 className='display-3 '>
-                        {props.title} {wordCloudSize.width}x {wordCloudSize.height}
-                    </h1>
-                </Col>
-            </Row>
-            <Row className="wordcloud border" ref={wordCloudRef} >
-                <Col>
-                {wordCloudSize.width > 0 && wordCloudSize.height > 0 && (
-                <Wordcloud
-                    words={words}
-                    width={wordCloudSize.width}
-                    height={wordCloudSize.height}
-                    fontSize={fontSizeSetter}
-                    font={'Impact'}
-                    padding={2}
-                    spiral={spiralType}
-                    rotate={withRotation ? getRotationDegree : 0}
-                    random={fixedValueGenerator}
-                    fluid
-                >
-                    {(cloudWords) =>
-                        cloudWords.map((w, i) => (
-                            <Text
-                                key={w.text}
-                                fill={colors[i % colors.length]}
-                                textAnchor={'middle'}
-                                transform={`translate(${w.x}, ${w.y}) rotate(${w.rotate})`}
-                                fontSize={w.size}
-                                fontFamily={w.font}
-                                className="wordEffect"
-                            >
-                                {w.text}
-                            </Text>
-                        ))
-                    }
-                </Wordcloud>
-            )}
-                </Col>
-            </Row>
-            
-        </div>
+        <>           
+            <div className='wordcloud'>
+                {/*parentSize: {props.finalWidth} x {props.finalHeight}*/}                
+                {props.finalWidth  && props.finalHeight  && (
+                    <Wordcloud
+                        words={words}
+                        width={props.finalWidth}
+                        height={props.finalHeight}
+                        
+                        fontSize={fontSizeSetter}
+                        font={'Impact'}
+                        padding={2}
+                        spiral={spiralType}
+                        rotate={withRotation ? getRotationDegree : 0}
+                        random={fixedValueGenerator}
+                    >
+                        {(cloudWords) =>
+                            cloudWords.map((w, i) => (
+                                <Text
+                                    key={w.text}
+                                    fill={colors[i % colors.length]}
+                                    textAnchor={'middle'}
+                                    transform={`translate(${w.x}, ${w.y}) rotate(${w.rotate})`}
+                                    fontSize={w.size}
+                                    fontFamily={w.font}
+                                    className='wordEffect'
+                                >
+                                    {w.text}
+                                </Text>
+                            ))
+                        }
+                    </Wordcloud>
+                    )}
+                </div>
+        </>
     );
 }

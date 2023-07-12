@@ -35,8 +35,13 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-
-    .title{
-        margin-top: 4.5rem;
-    }
+}
+.jumbotron_title{
+    font-family: 'Bruno Ace SC';
+    text-align: center;
+    margin-top: 4.5rem;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+    color: #3A006E;
+    font-weight:bold;
 }

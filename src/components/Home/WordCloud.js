@@ -80,12 +80,8 @@ export default function WordCloud(props) {
 
     return (
         <>           
-            <div className='wordcloud border'>
-                parentSize: {props.finalWidth} x {props.finalHeight}
-                {/*width={wordCloudSize.width}
-                        height={wordCloudSize.height}*/
-                        /*width={props.finalWidth}
-        height={props.finalHeight}*/}
+            <div className='wordcloud'>
+                {/*parentSize: {props.finalWidth} x {props.finalHeight}*/}                
                 {props.finalWidth  && props.finalHeight  && (
                     <Wordcloud
                         words={words}

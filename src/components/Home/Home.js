@@ -60,12 +60,12 @@ const Home = () => {
 
         <>
             <Container className='jumbotron' fluid>
-                <Row className=''>
-                    <Col xs={12} md={6} className=''>
+                <Row className='align-items-center justify-content-center'>
+                    <Col sm={12} md={4} className=''>
                         <Logo />
                     </Col>
-                    <Col md={6} className='about_me d-flex flex-column'>
-                        <h1 className='display-3 flex-shrink-0'>
+                    <Col md={8} className='about_me d-flex flex-column'>
+                        <h1 className='display-1 flex-shrink-0'>
                             Mohammed Misbah Zarrar
                         </h1>
                         <div className='flex-grow-1 border about_me_content'>
@@ -75,38 +75,27 @@ const Home = () => {
                 </Row>
             </Container>
 
-            <Container className='jumbotron border skills' fluid>
-                <Row className='w-100 title border'>
+            <Container className='jumbotron skills' fluid>
+                <Row className='w-100 jumbotron_title'>
                     <Col>
-                        <h1 className='display-4 border'>Skills{parentSize.width - 5} x {parentSize.height - 15}</h1>
+                        <h1 className='display-3'>Skills{/*{parentSize.width - 5} x {parentSize.height - 15}*/}</h1>
                     </Col>
                 </Row>
-                <Row className='w-100 border flex-grow-1' style={{ maxHeight: '100%', maxWidth: '100%' }}>
-                    <Col className='border' style={{ padding: 0, border: 0, }} ref={impCol}>
-                        <WordCloud words={words} title={'Skills'} finalWidth={parentSize.width - 5} finalHeight={parentSize.height * 0.85} />
+                <Row className='w-100 flex-grow-1 about_me_content mb-3' style={{ maxHeight: '100%', maxWidth: '100%' }}>
+                    <Col style={{ padding: 0, border: 0 }} ref={impCol}>
+                        <WordCloud words={words} finalWidth={parentSize.width - 5} finalHeight={parentSize.height * 0.85} />
                     </Col>
                 </Row>
             </Container>
 
-
+        
             <Container className='jumbotron border' fluid>
-                <Row className='border'>
-                    <Col >
-                        <h1 className='display-4 border'>
-                            Skills
-                        </h1>
-                    </Col>
-                </Row>
-                <WordCloud words={words} title={'Skills'} />
-            </Container>
-
-            <Container className='jumbotron border' fluid>
-                <Row className='border'>
-                    <Col xs={12} md={6} className='border'>
+                <Row className='align-items-center justify-content-center border'>
+                    <Col sm={12} md={4} className='border'>
                         <Logo />
                     </Col>
-                    <Col md={6} className='about_me d-flex flex-column'>
-                        <h1 className='display-3 flex-shrink-0 border'>
+                    <Col md={8} className='about_me d-flex flex-column'>
+                        <h1 className='display-1 flex-shrink-0 border'>
                             Mohammed Misbah Zarrar
                         </h1>
                         <div className='flex-grow-1 border about_me_content'>

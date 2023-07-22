@@ -89,8 +89,19 @@ const Home = () => {
                 </Row>
             </Container>
 
+            <Container className='jumbotron' fluid>
+                <Row className='w-100 jumbotron_title'>
+                    <Col>
+                        <h1 className='display-3'>Certificates</h1>
+                    </Col>
+                </Row>
+                <Row className='w-100 h-100 about_me_content' >
+                    <ImageCarousel />
+                </Row>
+            </Container>
 
-            <Container className='jumbotron border' fluid>
+            
+            {/*<Container className='jumbotron border' fluid>
                 <Row className='align-items-center justify-content-center border'>
                     <Col sm={12} md={4} className='border'>
                         <Logo />
@@ -104,13 +115,7 @@ const Home = () => {
                         </div>
                     </Col>
                 </Row>
-            </Container>
-
-            <Container className='jumbotron border' fluid>
-                <Row className='w-100 h-100 border ' >
-                     <ImageCarousel />
-                </Row>
-            </Container>
+    </Container>*/}
         </>
     );
 };

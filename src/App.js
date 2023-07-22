@@ -8,6 +8,8 @@ import Experience from './components/Experience/Experience';
 import Project from './components/Project/Project';
 import Education from './components/Education/Education';
 
+
+
 function App() {
   return (
     <Router>

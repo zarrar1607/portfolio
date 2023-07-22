@@ -4,6 +4,7 @@ import Logo from '../ProfileImage';
 import { Col, Container, Row } from 'react-bootstrap';
 import WordCloud from './WordCloud';
 import { useRef, useState, useEffect } from 'react';
+import ImageCarousel from './ImageCloud';
 
 const words = [
     { text: 'Hello', value: 10 },
@@ -26,7 +27,7 @@ const words = [
     { text: 'Server', value: 8 },
     { text: 'Security', value: 12 },
     { text: 'Testing', value: 16 },
-    
+
 ];
 
 
@@ -88,7 +89,7 @@ const Home = () => {
                 </Row>
             </Container>
 
-        
+
             <Container className='jumbotron border' fluid>
                 <Row className='align-items-center justify-content-center border'>
                     <Col sm={12} md={4} className='border'>
@@ -102,6 +103,12 @@ const Home = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </div>
                     </Col>
+                </Row>
+            </Container>
+
+            <Container className='jumbotron border' fluid>
+                <Row className='w-100 h-100 border ' >
+                     <ImageCarousel />
                 </Row>
             </Container>
         </>

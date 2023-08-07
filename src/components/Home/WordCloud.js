@@ -74,10 +74,32 @@ export default function WordCloud(props) {
 
     const fixedValueGenerator = () => 0.5;
 
-    const colors = ['#3A006E', '#8C1A6A', 'rgba(58, 0, 110, 0.5)'];
+    const colors = ['#3A006E', '#8C1A6A', 'rgba(58, 0, 110, 0.4)'];
 
+    const [randomWordIndex, setRandomWordIndex] = useState(null);
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+          const randomIndex = Math.floor(Math.random() * words.length);
+          setRandomWordIndex(randomIndex);
+        }, 2000); // Change the interval value to adjust the animation frequency
+    
+        // Clear the interval when the component unmounts
+        return () => clearInterval(interval);
+      }, [words]);
+    
+      const applyScaleAnimation = (index) => {
+        return randomWordIndex === index ? 'scaleAnimation' : '';
+      };
 
+      // Handlers for disabling animation on hover
+  const handleMouseEnter = (index) => {
+    setRandomWordIndex(null); // Set randomWordIndex to null to disable the animation
+  };
+
+  const handleMouseLeave = () => {
+    setRandomWordIndex((prevIndex) => (prevIndex === null ? null : prevIndex)); // Restore the animation after leaving
+  };
     return (
         <>           
             <div className='wordcloud'>
@@ -104,7 +126,9 @@ export default function WordCloud(props) {
                                     transform={`translate(${w.x}, ${w.y}) rotate(${w.rotate})`}
                                     fontSize={w.size}
                                     fontFamily={w.font}
-                                    className='wordEffect'
+                                    className={`wordEffect ${applyScaleAnimation(i)}`}
+                                    onMouseEnter={() => handleMouseEnter(i)} // Disable animation on hover
+                                    onMouseLeave={handleMouseLeave} // Restore animation after leaving
                                 >
                                     {w.text}
                                 </Text>

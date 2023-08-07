@@ -53,3 +53,7 @@ export default App;
     </div>
 */
 //>npm i @emailjs/browser - contact form
+
+//https://react-spring.dev/docs/concepts/animated-elements
+//https://www.copycat.dev/blog/react-animation-libraries/
+//https://www.react-reveal.com/

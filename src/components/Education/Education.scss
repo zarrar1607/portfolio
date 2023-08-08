@@ -1,0 +1,59 @@
+.fading-element {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  /* Add any other styles you want for the fading element */
+}
+
+.timeline {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 5vw;
+  /* Use vw units for a fixed value relative to the viewport width */
+  border-left: 10px solid red;
+}
+
+.jumbotron {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+
+.timeline-year {
+  position: absolute;
+  padding: 10px 20px;
+  margin-top: 100px;
+  left: 3%;
+  border-radius: 2rem;
+  border: 2px solid #3A006E;
+  background-color: rgb(255, 255, 255);
+  color: #3A006E;
+  z-index: 3;
+}
+
+.glowing {
+  background-color: #3A006E;
+  color: white;
+  box-shadow: 0px 0px 10px rgba(58, 0, 110, 0.8);
+  font-weight: bold;
+}
+
+.cube {
+  position: sticky;
+  top: 140px;
+  left: 4%;
+  height: 3vh;
+  width: 5vh;
+
+  padding: 10px 20px;
+  border: 2px solid #3A006E;
+  color: rgba(255, 255, 255, 0.0);
+  border-radius: 2rem;
+
+  background-color: #3A006E !important;
+  backdrop-filter: blur(8px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}

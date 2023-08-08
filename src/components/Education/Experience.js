@@ -1,25 +1,24 @@
 import React, { useState, useEffect, useRef } from 'react';
 import TimelineItem from './TimeLineItem';
 import timelineElements from "./timelineElements"
-import './Education.scss'
+import './Experience.scss';
 
 const getColorClass = (id) => {
-    const purpleShades = [
-        '#3A006E', // Darkest shade
-        '#665299',
-        '#6E5FA3',
-        '#776FB7',
-        '#7E7FCC',
-        '#858FE0', // Lightest shade
-    ];
+  const purpleShades = [
+    '#3A006E', // Darkest shade
+    '#665299',
+    '#6E5FA3',
+    '#776FB7',
+    '#7E7FCC', 
+    '#858FE0', // Lightest shade
+  ];
 
-    const index = id % purpleShades.length;
-    return purpleShades[index];
+  const index = id % purpleShades.length;
+  return purpleShades[index];
 };
 
-
-const Education = () => {
-    const timelineElementsRefs = useRef([]);
+const Experience = () => {
+  const timelineElementsRefs = useRef([]);
   const cubeRef = useRef(null);
 
   useEffect(() => {
@@ -79,4 +78,4 @@ const Education = () => {
     </>
   );
 };
-export default Education;
+export default Experience;

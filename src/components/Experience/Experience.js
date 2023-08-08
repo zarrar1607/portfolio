@@ -1,16 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, Element } from 'react-scroll';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
 import TimelineItem from './TimeLineItem';
 import './Experience.scss';
-import { Row, Col } from 'react-bootstrap';
 import timelineElements from "./timelineElements"
-
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component"
 
 import "react-vertical-timeline-component/style.min.css"
 

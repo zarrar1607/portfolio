@@ -8,6 +8,8 @@
     font-family: "Audiowide";
     font-size: 20px;
     letter-spacing: 0.75rem;
+    position: relative; /* Change this to relative or other suitable value */
+    z-index: 2; 
   }
   
   .footer p {

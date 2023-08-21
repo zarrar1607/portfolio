@@ -5,7 +5,7 @@
     height: 100vh;
     background-color: rgb(10,25,41);
     padding-top: 28px;
-    z-index: 1; /* Set a higher z-index to make it appear above content */
+    z-index: 1000; /* Set a higher z-index to make it appear above content */
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -14,7 +14,6 @@
 }
 
 .sidenavClosed {
-    composes: sidenav;
     transition: width 0.3s ease-in-out;
     width: 20px;
 }
@@ -24,7 +23,8 @@
  
 .sideitem {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
     padding: 10px 20px;
     cursor: pointer;
     color: #B2BAC2;
@@ -33,11 +33,10 @@
  
 
 .linkText {
-    padding-left: 16px;
+    //padding-left: 16px;
 }
  
 .linkTextClosed {
-    composes: linkText;
     visibility: hidden;
 }
  
@@ -56,4 +55,8 @@
     cursor: pointer;
     padding-left: 20px;
     background-color: rgb(10,25,41);
+}
+
+.row{
+    align-items: center;
 }

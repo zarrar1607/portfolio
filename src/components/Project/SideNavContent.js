@@ -1,22 +1,41 @@
 export const navData = [
     {
         id: 0,
-        text: "Home",
+        text: "Software",
         link: "/"
     },
     {
         id: 1,
-        text: "Explore",
-        link: "explore"
+        text: "Machine Learning",
+        link: "explore",
+        sublinks: [
+            {
+                id: 10,
+                text: "Sublink 1",
+                link: "explore/sublink1"
+            },
+            {
+                id: 11,
+                text: "Sublink 2",
+                link: "explore/sublink2"
+            }
+        ]
     },
     {
         id: 2,
-        text: "Statistics",
-        link: "statistics"
+        text: "Robotics",
+        link: "statistics",
+        sublinks: [
+            {
+                id: 30,
+                text: "Sublink 3",
+                link: "settings/sublink1"
+            },
+            {
+                id: 31,
+                text: "Sublink 4",
+                link: "settings/sublink2"
+            }
+        ]
     },
-    {
-        id: 3,
-        text: "Settings",
-        link: "settings"
-    }
 ]

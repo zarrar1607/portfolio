@@ -92,7 +92,7 @@ const Home = () => {
             <Container className='jumbotron' fluid>
                 <Row className='w-100 jumbotron_title'>
                     <Col>
-                        <h1 className='display-3'>Certificates</h1>
+                        <h1 className='display-3'>Certs</h1>
                     </Col>
                 </Row>
                 <Row className='w-100 h-100 about_me_content' >

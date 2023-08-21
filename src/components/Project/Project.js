@@ -1,4 +1,7 @@
 import React from 'react';
+import { useState, useEffect, useRef } from 'react';
+import ProjectItem from './TimeLineItem';
+import timelineElements from "./timelineElements"
 import './Project.scss'
 
 import SideNav from './SideNav.js';
@@ -11,27 +14,34 @@ import {
 
 
 const Project = () => {
+    
+
     return (
         <>
             <SideNav />
-            <div className='project-content'>
-                <div className='jumbotron'>
-                    Project PAge
+
+            {timelineElements.map((element, index) => (
+                <div
+                    className="projectline"
+                    style={{ border:'none' }}
+                    key={element.id}
+                >
+                    <div key={element.id} className='jumbotron'>
+                        <ProjectItem
+                            title={element.title}
+                            company={element.company}
+                            location={element.location}
+                            description={element.description}
+                            date={element.date}
+                            year={element.year}
+                        />
+                    </div>
                 </div>
-                <div className='jumbotron'>
-                    Project PAge
-                </div>
-                <div className='jumbotron'>
-                    Project PAge
-                </div>
-                <div className='jumbotron'>
-                    Project PAge
-                </div>
-                <div className='jumbotron'>
-                    Project PAge
-                </div>
-            </div>
+            ))}
+            
+    
         </>
+
     );
 };
 

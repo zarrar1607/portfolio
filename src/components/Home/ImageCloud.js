@@ -88,7 +88,6 @@ export default function ImageCarousel() {
         rotate: -10,
         depth: 100,
         stretch: -10,
-        slideShadows: false,
       }}
     >
       {images.map((image, index) => (

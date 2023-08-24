@@ -5,6 +5,7 @@ import ImageCarousel from './ImageCarousel';
 
 
 const ProjectItem = ({ title, company, location, description, date, year }) => {
+  
   return (
     <>
     <div className="project-item">

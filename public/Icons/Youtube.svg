@@ -1,0 +1,18 @@
+<svg width="104" height="76" viewBox="0 0 104 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Youtube" filter="url(#filter0_d_133_2387)">
+<path id="Vector" d="M88.1182 9.68C87.6094 7.80785 86.6066 6.09921 85.2102 4.72507C83.8138 3.35093 82.0728 2.3595 80.1614 1.85C73.125 2.1855e-07 45 0 45 0C45 0 16.875 2.1855e-07 9.83864 1.85C7.92724 2.3595 6.18622 3.35093 4.78983 4.72507C3.39344 6.09921 2.39065 7.80785 1.88182 9.68C2.23517e-07 16.59 0 31 0 31C0 31 2.23517e-07 45.41 1.88182 52.32C2.39065 54.1921 3.39344 55.9008 4.78983 57.2749C6.18622 58.6491 7.92724 59.6405 9.83864 60.15C16.875 62 45 62 45 62C45 62 73.125 62 80.1614 60.15C82.0728 59.6405 83.8138 58.6491 85.2102 57.2749C86.6066 55.9008 87.6094 54.1921 88.1182 52.32C90 45.41 90 31 90 31C90 31 90 16.59 88.1182 9.68Z" fill="#FF0302"/>
+<path id="Vector_2" d="M35.7954 44.0852V17.9152L59.3181 31.0002L35.7954 44.0852Z" fill="#FEFEFE"/>
+</g>
+<defs>
+<filter id="filter0_d_133_2387" x="0" y="0" width="104" height="76" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="10" dy="10"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_133_2387"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_133_2387" result="shape"/>
+</filter>
+</defs>
+</svg>

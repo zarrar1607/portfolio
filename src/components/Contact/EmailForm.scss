@@ -1,0 +1,55 @@
+.btn {
+    margin-top: 10% !important;
+    margin-bottom: 10%;
+    width: 100%;
+    border-radius: 2rem;
+
+    text-align: center;
+    font-family: 'Montserrat Alternates';
+
+    font-weight: 600;
+    letter-spacing: 1.89rem;
+    font-size: x-large;
+    border: 2px solid #3A006E;
+    background-color: white;
+    border-color: #3A006E;
+    color: #3A006E;
+}
+
+.btn:hover{
+    background-color: #3A006E;
+    color: white;
+    border-color: #3A006E;
+    box-shadow: 0px 0px 10px rgba(58, 0, 110, 0.8);
+}
+
+.btn:active{
+    box-shadow: 0px 0px 20px rgba(58, 0, 110, 0.8);
+    background-color: #3A006E!important;
+    color: white!important;
+    border-color: #3A006E!important;
+}
+
+.email h3.display-1 {
+    font-size: x-large;
+    font-weight: lighter;
+    
+}
+
+.email h1.display-1 {
+    margin-bottom: 0px;
+}
+
+.email.container {
+    text-align: center;
+    color: #3A006E;
+}
+
+.form-control{
+    border-radius: 2rem;
+    border-color: #3A006E
+}
+.form-control:focus{
+    box-shadow: 0px 0px 10px rgba(58, 0, 110, 0.8);
+    border-color: #3A006E
+}

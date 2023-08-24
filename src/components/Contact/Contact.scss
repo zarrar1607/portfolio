@@ -1,0 +1,89 @@
+.contact .jumbotron {
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.contact .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.contact a{
+    position: relative;
+    text-decoration: none;
+    transition: top 5.5s ease-in-out;
+    color: none;
+}
+.contact a:hover{
+    top: -10px;
+}
+.contact .icon{
+    //max-width: 100px;
+    max-height: 100px;
+}
+
+.icon_text {
+    font-family: 'Montserrat';
+    padding-left: 0px;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust font size for smaller screens (up to 576px) */
+@media (max-width: 576px) {
+    .icon_text {
+        font-size: 14px;
+    }
+}
+
+/* Adjust font size for small to medium screens (577px to 767px) */
+@media (min-width: 577px) and (max-width: 767px) {
+    .icon_text {
+        font-size: 16px;
+    }
+}
+
+/* Adjust font size for medium to large screens (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .icon_text {
+        font-size: 18px;
+    }
+}
+
+/* Adjust font size for large screens (992px and above) */
+@media (min-width: 992px) {
+    .icon_text {
+        font-size: 20px;
+    }
+}
+
+.LinkedIn a{
+    color: #0077B5;
+}
+
+.Github a{
+    color: #191717;
+}
+.Mail a{
+    color: #0038FF;
+}
+.LeetCode a{
+    color: #E7A41F;
+}
+.HackerRank a{
+    color: #2FC363;
+}
+.Microsoft a{
+    color: #F84437;
+}
+.TechGig a{
+    color: #2E4979;
+}
+.Google a{
+    color: #34A853;
+}
+.Youtube a{
+    color: #FF0302;
+}

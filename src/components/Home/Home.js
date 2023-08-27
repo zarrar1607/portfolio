@@ -1,34 +1,13 @@
 import './Home.scss'
 import React from 'react';
-import Logo from '../ProfileImage';
-import { Col, Container, Row } from 'react-bootstrap';
+//import Logo from '../ProfileImage';
+import { Col, Container, Row, Image } from 'react-bootstrap';
 import WordCloud from './WordCloud';
 import { useRef, useState, useEffect } from 'react';
 import ImageCarousel from './ImageCloud';
+import SkillWords from './SkillWords';
 
-const words = [
-    { text: 'Hello', value: 10 },
-    { text: 'World', value: 20 },
-    { text: 'React', value: 15 },
-    { text: 'JavaScript', value: 12 },
-    { text: 'CSS', value: 8 },
-    { text: 'HTML', value: 20 },
-    { text: 'OpenAI', value: 18 },
-    { text: 'Chatbot', value: 14 },
-    { text: 'AI', value: 16 },
-    { text: 'Machine Learning', value: 13 },
-    { text: 'Web Development', value: 11 },
-    { text: 'Design', value: 9 },
-    { text: 'Frontend', value: 17 },
-    { text: 'Backend', value: 7 },
-    { text: 'Database', value: 10 },
-    { text: 'API', value: 19 },
-    { text: 'Cloud', value: 15 },
-    { text: 'Server', value: 8 },
-    { text: 'Security', value: 12 },
-    { text: 'Testing', value: 16 },
-
-];
+const words = SkillWords;
 
 
 
@@ -62,15 +41,23 @@ const Home = () => {
         <>
             <Container className='jumbotron' fluid>
                 <Row className='align-items-center justify-content-center'>
-                    <Col sm={12} md={4} className=''>
-                        <Logo />
+                    <Col sm={12} md={6} xl={4} className='about_me_logo'>
+                        <Image src='.//ProfileImage/my_image.svg' alt="My Profile" fluid/>
                     </Col>
-                    <Col md={8} className='about_me d-flex flex-column'>
+                    <Col sm={12} md={6} xl={8} className='about_me d-flex flex-column'>
                         <h1 className='display-1 flex-shrink-0'>
                             Mohammed Misbah Zarrar
                         </h1>
                         <div className='flex-grow-1 border about_me_content'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Hi! &#x1F44B; <br/>
+                            Welcome to my portfolio!  &#x1F603; <br/>
+                            I'm a full-stack software developer with a passion for Artificial Intelligence and automation.  👨‍💻 <br/> <br/>
+                            
+                            Currently pursuing a master's in Computer Science, specializing in Data Science. 
+                            I enjoy expanding my knowledge and diving into unique projects such as autonomous robotics 🤖, builing web, destop, and mobile apps 💻. 
+                            I'm also an enthusiastic participant in competitive coding challenges.<br/> <br/>
+
+                            Feel free to explore my portfolio and get to know more about my work and experiences! 🚀
                         </div>
                     </Col>
                 </Row>

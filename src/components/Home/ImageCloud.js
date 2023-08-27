@@ -1,28 +1,24 @@
-import React from 'react';
-// import Swiper core and required modules
+import React, { useState, useEffect } from 'react';
 import { Navigation, Pagination, EffectCoverflow, Autoplay } from 'swiper/modules';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper';
-
-import { useState, useEffect } from 'react';
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import './ImageCloud.scss';
+import ImageItems from './ImageItems'; // Import your ImageItems array
 
-
+// Initialize Swiper modules
 SwiperCore.use([Navigation, Pagination, EffectCoverflow, Autoplay]);
 
 export default function ImageCarousel() {
+  // State for the number of slides displayed
   const [slidesPerView, setSlidesPerView] = useState(3);
+  // State to track the currently active slide index
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const importAll = (r) => r.keys().map(r);
-  const images = importAll(require.context('.//images', false, /\.(png|jpe?g|svg)$/));
-
+  // Handle window resize to adjust the number of slides displayed
   useEffect(() => {
     const handleResize = () => {
       const windowWidth = window.innerWidth;
@@ -37,25 +33,31 @@ export default function ImageCarousel() {
       }
     };
 
-    handleResize(); // Call it initially
+    // Initial call and event listener for resizing
+    handleResize();
     window.addEventListener('resize', handleResize);
+
+    // Remove the event listener when the component unmounts
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
 
+  // Handle click on a slide to set it as active
   const handleSlideClick = (index) => {
     setActiveIndex(index);
   };
 
+  // Calculate opacity based on the distance from the active slide
   const calculateOpacity = (index) => {
     const distance = Math.abs(index - activeIndex);
-    const maxDistance = Math.floor(slidesPerView / 2); // Max distance from the center slide
-    const minOpacity = 0.5; // Minimum opacity
+    const maxDistance = Math.floor(slidesPerView / 2);
+    const minOpacity = 0.5;
     const opacityStep = (1 - minOpacity) / maxDistance;
     return 1 - distance * opacityStep;
   };
 
+  // Determine the maximum image height based on window width
   const getImageHeight = () => {
     const windowWidth = window.innerWidth;
     if (windowWidth >= 1200) {
@@ -69,16 +71,14 @@ export default function ImageCarousel() {
     }
   };
 
-
   return (
     <Swiper
       effect="coverflow"
       slidesPerView={slidesPerView}
       centeredSlides
       grabCursor
-      //loop
       autoplay={{
-        delay:  1500, // Time between slides (in ms)
+        delay: 1500, // Time between slides (in ms)
         disableOnInteraction: false, // Keep autoplay after user interactions
       }}
       onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
@@ -90,18 +90,21 @@ export default function ImageCarousel() {
         stretch: -10,
       }}
     >
-      {images.map((image, index) => (
+      {/* Map through ImageItems array to create slides */}
+      {ImageItems.map((item, index) => (
         <SwiperSlide key={index}>
           <div
             className={`slide-content ${activeIndex === index ? 'active' : 'inactive'}`}
             onClick={() => handleSlideClick(index)}
-            style={{ 
-              opacity: calculateOpacity(index) ,
-              transition: 'transform 0.6s, opacity 0.5s', // Add CSS transition property for smoother effect
+            style={{
+              opacity: calculateOpacity(index),
+              transition: 'transform 0.6s, opacity 0.5s',
             }}
           >
-            <img src={image} alt={`Image ${index + 1}`} style={{ maxHeight: getImageHeight() }} />
+            {/* Load images from the 'Certificates' directory */}
+            <img src={`./Certificates/${item.filename}`} alt={`${item.title}`} style={{ maxHeight: getImageHeight() }} />
           </div>
+          <div className={`slide-caption ${activeIndex === index ? 'active' : 'inactive'}`}>{`${item.title}`}</div>
         </SwiperSlide>
       ))}
     </Swiper>

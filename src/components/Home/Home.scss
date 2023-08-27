@@ -20,15 +20,23 @@
 .about_me_content{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     box-shadow: 0 0px 5px rgba(58, 0, 110, 0.4);
     border-radius: 1.7rem;
     background-color: transparent!important;
     backdrop-filter: blur(8px);
     padding: 1rem;
     font-size: 1.3rem;
+    text-align: left;
 }
-
+.about_me_logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 .skills{
     height: 100vh;
     display:flex;
@@ -46,3 +54,33 @@
     font-weight:bold;
 }
 
+/* Adjust font size for smaller screens (up to 576px) sm*/
+@media (max-width: 576px) {
+    .about_me_content {
+        font-size: 14px;
+    }
+    .about_me_logo img{
+        max-height: 250px;
+    }
+}
+
+/* Adjust font size for small to medium screens (577px to 767px) md*/
+@media (min-width: 577px) and (max-width: 767px) {
+    .about_me_content {
+        font-size: 16px;
+    }
+}
+
+/* Adjust font size for medium to large screens (768px to 991px) lg*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .about_me_content {
+        font-size: 18px;
+    }
+}
+
+/* Adjust font size for large screens (992px and above) xl*/
+@media (min-width: 992px) {
+    .icon_about_me_content{
+        font-size: 24px;
+    }
+}

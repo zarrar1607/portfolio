@@ -16,12 +16,12 @@ import './ImageCarousel.scss';
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow, Autoplay]);
 
-export default function ImageCarousel() {
+export default function ImageCarousel(key, image_path) {
   const [slidesPerView, setSlidesPerView] = useState(3);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const importAll = (r) => r.keys().map(r);
-  const images = importAll(require.context('.//images', false, /\.(png|jpe?g|svg)$/));
+  const images = importAll(require.context('.//Project', false, /\.(png|jpe?g|svg)$/));
 
   useEffect(() => {
     const handleResize = () => {
@@ -59,16 +59,27 @@ export default function ImageCarousel() {
   const getImageHeight = () => {
     const windowWidth = window.innerWidth;
     if (windowWidth >= 1200) {
-      return 500;
-    } else if (windowWidth >= 992) {
-      return 400;
-    } else if (windowWidth >= 768) {
       return 300;
+    } else if (windowWidth >= 992) {
+      return 250;
+    } else if (windowWidth >= 768) {
+      return 200;
     } else {
       return 200;
     }
   };
-
+  const getTopPadding = () => {
+    const windowWidth = window.innerWidth;
+    if (windowWidth >= 1200) {
+      return 60;
+    } else if (windowWidth >= 992) {
+      return 60;
+    } else if (windowWidth >= 768) {
+      return 60;
+    } else {
+      return 60;
+    }
+  };
 
   return (
     <Swiper
@@ -89,9 +100,12 @@ export default function ImageCarousel() {
         depth: 100,
         stretch: -10,
       }}
+      
     >
       {images.map((image, index) => (
-        <SwiperSlide key={index}>
+        <SwiperSlide key={index} 
+        style={{paddingTop:getTopPadding()}}
+        >
           <div
             className={`slide-content ${activeIndex === index ? 'active' : 'inactive'}`}
             onClick={() => handleSlideClick(index)}
@@ -99,6 +113,7 @@ export default function ImageCarousel() {
               opacity: calculateOpacity(index) ,
               transition: 'transform 0.6s, opacity 0.5s', // Add CSS transition property for smoother effect
             }}
+            
           >
             <img src={image} alt={`Image ${index + 1}`} style={{ maxHeight: getImageHeight() }} />
           </div>

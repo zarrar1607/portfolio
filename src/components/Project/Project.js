@@ -1,8 +1,9 @@
 import React from 'react';
 import { useState, useEffect, useRef } from 'react';
-import ProjectItem from './TimeLineItem';
+import ProjectItem from './ProjectItem';
 import timelineElements from "./timelineElements"
 import './Project.scss'
+import ImageCarousel from './ImageCarousel';
 
 import SideNav from './SideNav.js';
 import Home from "../Home/Home.js";
@@ -11,37 +12,39 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
+import { Row, Image } from 'react-bootstrap';
 
 
 const Project = () => {
-    
-
     return (
-        <>
+        <div className='project'>
+            <div class='jumbotron' style={{justifyContent:'center', alignItems:'center'}}>
+                <Image src='/Under Construction.jpg' alt='Under Construction' fluid></Image>
+            </div>
             <SideNav />
-
             {timelineElements.map((element, index) => (
                 <div
-                    className="projectline"
-                    style={{ border:'none' }}
+                    className="jumbotron"
+                    style={{ border: 'none' }}
                     key={element.id}
                 >
-                    <div key={element.id} className='jumbotron'>
-                        <ProjectItem
-                            title={element.title}
-                            company={element.company}
-                            location={element.location}
-                            description={element.description}
+                    <ProjectItem
+                            id={element.id}
+                            project_title={element.project_title}
+                            project_type={element.project_type}
+                            project_domain={element.project_domain}
                             date={element.date}
                             year={element.year}
-                        />
+                            skills={element.skills}
+                            description={element.description}
+                            image_path={element.image_path}
+                    />
+                    <div className='project_images' >
+                        <ImageCarousel key={element.id} image_path={element.image_path} />
                     </div>
                 </div>
             ))}
-            
-    
-        </>
-
+        </div>
     );
 };
 

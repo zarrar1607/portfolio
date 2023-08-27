@@ -22,16 +22,16 @@ export default function Sidenav() {
             <span className='sideNavContent'>
                 {sidenavOpen &&
                     navData.map(item => (
-                        <div key={item.id} className='sideitem border'>
-                            <Row onClick={() => toggleItem(item.id)} className={sidenavOpen ? 'collapsible-header' : 'collapsible-header-closed'}>
+                        <div key={item.id} className='sideitem '>
+                            <Row onClick={() => toggleItem(item.id)} className={sidenavOpen ? 'collapsible-header w-100' : 'collapsible-header-closed w-100'}>
                                 {item.icon}
-                                <Col xs={8} className={sidenavOpen ? 'linkText border' : 'linkText linkTextClosed border '}>{item.text}</Col>
-                                <Col xs={4} className='triangle-icon border'>{activeItem === item.id ? '▼' : '►'}</Col>
+                                <Col xs={8} className={sidenavOpen ? 'linkText ' : 'linkText linkTextClosed border '}>{item.text}</Col>
+                                <Col xs={4} className='triangle-icon '>{activeItem === item.id ? '▼' : '>'}</Col>
                             </Row>
                             <Collapse in={activeItem === item.id}>
                                 <div className='collapsible-body'>
                                     {item.sublinks && item.sublinks.map(sublink => (
-                                        <div key={sublink.id} className='sideitem border'>
+                                        <div key={sublink.id} className='sideitem '>
                                             {sublink.icon}
                                             <span className='linkText'>{sublink.text}</span>
                                         </div>

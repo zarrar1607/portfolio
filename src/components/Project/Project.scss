@@ -1,11 +1,17 @@
-.jumbotron {
+.project .jumbotron {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
     flex-direction: column;
     margin-bottom: 0px;
 }
-.project-content{
+
+.project-content {
     margin-left: 9vh;
+}
+
+.project_images {
+    width: 100%;
+    background-color: rgb(10, 25, 41);
 }

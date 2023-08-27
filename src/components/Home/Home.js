@@ -86,23 +86,6 @@ const Home = () => {
                     <ImageCarousel />
                 </Row>
             </Container>
-
-            
-            {/*<Container className='jumbotron border' fluid>
-                <Row className='align-items-center justify-content-center border'>
-                    <Col sm={12} md={4} className='border'>
-                        <Logo />
-                    </Col>
-                    <Col md={8} className='about_me d-flex flex-column'>
-                        <h1 className='display-1 flex-shrink-0 border'>
-                            Mohammed Misbah Zarrar
-                        </h1>
-                        <div className='flex-grow-1 border about_me_content'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </div>
-                    </Col>
-                </Row>
-    </Container>*/}
         </>
     );
 };

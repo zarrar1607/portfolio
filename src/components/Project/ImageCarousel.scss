@@ -1,15 +1,14 @@
-.swiper-container {
+.project .swiper-container {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 20%;
+  //padding-top: 15%!important;
 }
 
-.slide-content {
+.project .slide-content {
   text-align: center;
-  //background-color: #f0f0f0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,13 +19,13 @@
   cursor: pointer;
 }
 
-.slide-content.active {
+.project .slide-content.active {
   transform: scale(1.0) translateY(-50px);
   z-index: -1;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.swiper-slide {
+.project .swiper-slide {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -34,7 +33,7 @@
   align-content: center;
 }
 
-.slide-content.inactive {
+.project .slide-content.inactive {
   transform: scale(0.7);
   /* Scale down the inactive slides */
   opacity: 0.6;
@@ -43,7 +42,7 @@
   /* Push the inactive slides behind the active slide */
 }
 
-caption {
+.project caption {
   position: absolute;
   bottom: 0;
   left: 0;

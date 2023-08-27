@@ -9,31 +9,64 @@
 }
 
 
-.display-1 {
+.project-item .display-1 {
   font-family: 'Bruno Ace SC';
   margin-bottom: 20px;
+  font-size: 60px;
 }
 
-.display-4 {
+.project-item .display-4 {
   font-family: 'Montserrat Alternates';
+  font-size: 40px;
 }
 
-.content {
+.project-item .content {
   flex: 1;
 }
 
-.content h5 {
+.project-item .content h5 {
   font-size: 1rem;
   font-family: 'Montserrat Alternates';
   color: gray;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
-.content p {
+.project-item .content p {
   line-height: 1.6;
 }
-.project_images {
-  width: 100%;
-  background-color: rgb(10, 25, 41);
-  z-index: -1!important;
+.tag {
+  display: inline-block; /* Ensure the tag takes up only the necessary space */
+  background-color: aqua;
+  border-radius: 1rem;
+  padding: 5px 10px;
+  font-family: 'Montserrat Alternates';
+  margin: 5px;
+  margin-right: 8px;
+  margin-left: 0px;
+  color: white;
+  cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+  transition: transform 0.3s ease; /* Add smooth transitions */
+}
+
+.tag:hover {
+  transform: scale(1.1); /* Scale up the tag on hover */
+}
+.description{
+  margin-top: 25px;
+}
+
+/* Adjust font size for smaller screens (up to 576px) sm*/
+@media (max-width: 576px) {
+  .project-item .content {
+    font-size: 14px;
+  }
+  .project-item .content .display-1{
+    font-size: 25px;
+  }
+  .project-item .content .display-4{
+    font-size: 14px;
+  }
+  .project-item .content h5{
+    font-size: 20px;
+  }
 }

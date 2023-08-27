@@ -1,66 +1,146 @@
 let timelineElements = [
-    {
-      id: 1,
-      company: "Company 1",
-      title: "Frontend Developer",
-      location: "Dragontail, Ascana",
-      description:
-        "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
-      date: "August 2016 - present",
-      year: 2023,
-    },
-    {
-      id: 2,
-      company: "Company 2",
-      title: "Backend Developer",
-      location: "Skystead, Craonia",
-      description:
-        "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
-      date: "June 2013 - August 2016",
-      year: 2016,
-    },
-    {
-      id: 3,
-      company: "Company 3",
-      title: "Quality Assurance Engineer",
-      location: "South Warren, Geshington",
-      description:
-        "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
-      date: "September 2011 - June 2013",
-      year: 2013,
-    },
-    {
-      id: 4,
-      company: "Company 4",
-      title: "Oak Ridge College",
-      location: "South Warren, Geshington",
-      description:
-        "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      buttonText: "Course Certificate",
-      date: "September 2011",
-      year: 2011,
-    },
-    {
-      id: 5,
-      company: "Company 5",
-      title: "Hawking College",
-      location: "Skystead, Craonia",
-      description:
-        "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      date: "2007 - 2011",
-      year: 2011,
-    },
-    {
-      id: 6,
-      company: "Company 1",
-      title: "Marble Hills Grammar School",
-      location: "Dragontail, Ascana",
-      description:
-        "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      date: "2003 - 2007",
-      year: 2007,
-    },
-  ]
-  
-  export default timelineElements
-  
+  {
+    id: 7,
+    company: "The University of Kansas",
+    title: "Graduate Teaching Assistant (OS)",
+    location: "Kansas, United States",
+    description: (
+      <ul>
+        <li>
+          Facilitated 2 weekly lab sessions for EECS 673 - Operating Systems,
+          overseeing a class of 40 students.
+        </li>
+        <li>
+          Assisted <strong>Dr. Prasad Kulkarni</strong> in teaching, revising, and grading assignments
+          and exams.
+        </li>
+        <li>
+          Fostered an inclusive learning environment by leading group discussions,
+          tailoring individual support to each student's needs, and encouraging
+          participation in class activities.
+        </li>
+      </ul>
+    ),
+    date: "Aug 2023 - Present",
+    year: 2023,
+  },
+  {
+    id: 6,
+    company: "Rademacher Financial, Inc.",
+    title: "Full-Stack Software Developer",
+    location: "Kansas, United States",
+    description:
+    (
+      <>
+      </>
+    ),
+    date: "May 2023 - Aug 2023",
+    year: 2023,
+  },
+  {
+    id: 5,
+    company: "The University of Kansas",
+    title: "Graduate Teaching Assistant (OS)",
+    location: "Kansas, United States",
+    description: (
+      <ul>
+        <li>
+          Facilitated 2 weekly lab sessions for EECS 673 - Operating Systems,
+          overseeing a class of 40 students.
+        </li>
+        <li>
+          Assisted <strong>Dr. Heechul Yun</strong> in teaching, revising, and grading assignments
+          and exams.
+        </li>
+        <li>
+          Fostered an inclusive learning environment by leading group discussions,
+          tailoring individual support to each student's needs, and encouraging
+          participation in class activities.
+        </li>
+      </ul>
+    ),
+    date: "Jan 2023 - May 2023",
+    year: 2023,
+  },
+  {
+    id: 4,
+    company: "Agile Technology Solutions, KU ",
+    title: "Quality Assurance Engineer",
+    location: "Kansas, United States",
+    description: (
+      <ul>
+        <li>
+          Initially, I was situated with the QA team to get hands-on with the products that have already been developed. Made use of SpringBoot and Postgres SQL to remove bugs
+        </li>
+        <li>
+          I worked here for a month and then I got the Teaching Assistant job which wavied my tution fee.
+        </li>
+      </ul>
+    ),
+    date: "Nov 2022 - Dec 2022",
+    year: 2022,
+  },
+  {
+    id: 3,
+    company: "Pantechelearning",
+    title: "Data Science & AI Intern",
+    location: "Remote",
+    description: (
+      <>
+        A 30-day internship of learning
+        Concepts: Data Aggregation, Visualization, Statistical Analysis.
+        using
+        <br />
+        Libraries: Pandas, Numpy, Matplotlib, Seaborn, and Sklearn, OpenCV, TensorFlow, MediaPipe, NLTK,
+        <br />
+        Tools: Tableau and Power -Bi, AWS, Azure,
+        and to apply the gained skills on industrial level projects.
+      </>
+    ),
+    date: "Dec 2021 - Feb 2022",
+    year: 2022,
+  },
+  {
+    id: 2,
+    company: "InMovidu Technologies Pvt Limited",
+    title: "Web Developer Intern",
+    location: "Remote",
+    description:(
+      <>
+        Internship program in Web Development HTML and CSS:
+        <br/>
+        Initially, the organizations taught the freshers, and after 2 weeks gave the assignment to complete.
+      </>
+    ),
+    date: "Sep 2020",
+    year: 2020,
+  },
+  {
+    id: 1,
+    company: "JPMorgan Chase & Co.",
+    title: "Intern",
+    location: "Dragontail, Ascana",
+    description:
+    (
+      <>
+        Over the period of May 2020, through the InsideSherpa platform, I completed practical task modules in:
+        <br/>
+        <ul>
+          <li>
+            Establishing Financial Data Feeds
+          </li>
+          <li>
+            Frontend Web Development
+          </li>
+          <li>
+            Data Visualization with Chase's Perspective
+          </li>
+        </ul>
+      </>
+    ),
+    date: "May 2020",
+    year: '2020',
+  },
+]
+
+export default timelineElements

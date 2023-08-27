@@ -14,9 +14,17 @@ const getColorClass = (id) => {
     '#7E7FCC', 
     '#858FE0', // Lightest shade
   ];
-
-  const index = id % purpleShades.length;
-  return purpleShades[index];
+  const year =[
+    2023,
+    2022,
+    2021,
+    2020,
+  ]
+  let i = 0;
+  for(i = 0; i<year.length; i++){
+    if(year[i] == id)
+      return purpleShades[i];
+  }
 };
 
 const Experience = () => {
@@ -60,7 +68,7 @@ const Experience = () => {
         <div
           className="timeline"
           style={{
-            borderColor: getColorClass(element.id)
+            borderColor: getColorClass(element.year)
           }}
           key={element.id}
         >
@@ -73,6 +81,7 @@ const Experience = () => {
               description={element.description}
               date={element.date}
               year={element.year}
+              color={ getColorClass(element.year)}
             />
           </div>
         </div>

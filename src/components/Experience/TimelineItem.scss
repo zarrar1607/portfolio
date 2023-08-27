@@ -28,3 +28,15 @@
   line-height: 1.6;
 }
 
+/* Adjust font size for smaller screens (up to 576px) sm*/
+@media (max-width: 576px) {
+  .timeline-item .content {
+    font-size: 14px;
+  }
+  .timeline-item .content .display-1{
+    font-size: 35px;
+  }
+  .timeline-item .content .display-4{
+    font-size: 25px;
+  }
+}

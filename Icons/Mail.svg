@@ -1,0 +1,22 @@
+<svg width="104" height="84" viewBox="0 0 104 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mail" filter="url(#filter0_d_111_2231)">
+<g clip-path="url(#clip0_111_2231)">
+<path id="Vector" d="M81 -1H9C4.05 -1 0.045 2.99375 0.045 7.875L0 61.125C0 66.0062 4.05 70 9 70H81C85.95 70 90 66.0062 90 61.125V7.875C90 2.99375 85.95 -1 81 -1ZM81 16.75L45 38.9375L9 16.75V7.875L45 30.0625L81 7.875V16.75Z" fill="#0038FF"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_111_2231" x="0" y="0" width="104" height="84" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="10" dy="10"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_111_2231"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_111_2231" result="shape"/>
+</filter>
+<clipPath id="clip0_111_2231">
+<rect width="90" height="70" rx="14" fill="white"/>
+</clipPath>
+</defs>
+</svg>

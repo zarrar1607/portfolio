@@ -4,17 +4,25 @@ import timelineElements from "./timelineElements"
 import './Education.scss'
 
 const getColorClass = (id) => {
-    const purpleShades = [
-        '#3A006E', // Darkest shade
-        '#665299',
-        '#6E5FA3',
-        '#776FB7',
-        '#7E7FCC',
-        '#858FE0', // Lightest shade
-    ];
-
-    const index = id % purpleShades.length;
-    return purpleShades[index];
+  const purpleShades = [
+    '#3A006E', // Darkest shade
+    '#665299',
+    '#6E5FA3',
+    '#776FB7',
+    '#7E7FCC', 
+    '#858FE0', // Lightest shade
+  ];
+  const year =[
+    2024,
+    2021,
+    2017,
+    2015,
+  ]
+  let i = 0;
+  for(i = 0; i<year.length; i++){
+    if(year[i] == id)
+      return purpleShades[i];
+  }
 };
 
 
@@ -59,7 +67,7 @@ const Education = () => {
         <div
           className="timeline"
           style={{
-            borderColor: getColorClass(element.id)
+            borderColor: getColorClass(element.year)
           }}
           key={element.id}
         >
@@ -72,6 +80,9 @@ const Education = () => {
               description={element.description}
               date={element.date}
               year={element.year}
+              color={ getColorClass(element.year)}
+              gradeType={element.GradeType}
+              grade={element.Grade}
             />
           </div>
         </div>

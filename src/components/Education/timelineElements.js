@@ -1,66 +1,68 @@
 let timelineElements = [
-    {
-      id: 1,
-      company: "Masters in Computer Science",
-      title: "University of Kansas",
-      location: "United states",
-      description:
-        "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
-      date: "August 2022 - present",
-      year: 2023,
-    },
-    {
-      id: 2,
-      company: "Company 2",
-      title: "Backend Developer",
-      location: "Skystead, Craonia",
-      description:
-        "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
-      date: "June 2013 - August 2016",
-      year: 2016,
-    },
-    {
-      id: 3,
-      company: "Company 3",
-      title: "Quality Assurance Engineer",
-      location: "South Warren, Geshington",
-      description:
-        "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
-      date: "September 2011 - June 2013",
-      year: 2013,
-    },
-    {
-      id: 4,
-      company: "Company 4",
-      title: "Oak Ridge College",
-      location: "South Warren, Geshington",
-      description:
-        "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      buttonText: "Course Certificate",
-      date: "September 2011",
-      year: 2011,
-    },
-    {
-      id: 5,
-      company: "Company 5",
-      title: "Hawking College",
-      location: "Skystead, Craonia",
-      description:
-        "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      date: "2007 - 2011",
-      year: 2011,
-    },
-    {
-      id: 6,
-      company: "Company 1",
-      title: "Marble Hills Grammar School",
-      location: "Dragontail, Ascana",
-      description:
-        "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-      date: "2003 - 2007",
-      year: 2007,
-    },
-  ]
-  
-  export default timelineElements
-  
+  {
+    id: 4,
+    company: "The University of Kansas",
+    title: "Masters in Computer Science",
+    location: "Kansas, United States",
+    GradeType: 'CGPA',
+    Grade: '4.0',
+    description: (
+      <>
+        <strong>Important Subjects Taken: </strong> Advance Data Science, Mobile Security, Information Retrival, 
+        Computer Vision, Machine Learning, Embedded ML, Mobile Security, Advance Data Structures & Algorithm
+      </>
+    ),
+    date: "Aug 2022 - Present",
+    year: 2024,
+  },
+  {
+    id: 3,
+    company: "Osmania University",
+    title: "Bachelors in Computer Science",
+    location: "Hyderabad, India",
+    GradeType: 'CGPA',
+    Grade: '3.9',
+    description: (
+      <>
+        <strong>Important Subjects Taken: </strong> Prblem Solving using C, Obj. Oriented Prog. using C++, Data Structures using C++,
+        Discrete Maths, Obj. Oriented Prog. using Java, Database Managment Systems, Operating Systems, Computer Grphics, 
+        Artificial Intelligence, Design & Analysis of Algorithm, Software Engineering, Web Prog, Computer N/W, Graph Theory,
+        Compiler Construction, Distributed Systems, Information Security, Data Mining, S/W Testing, Machine Learning, Cloud Computing
+      </>
+    ),
+    date: "Aug 2017 - Aug 2021",
+    year: 2021,
+  },
+  {
+    id: 2,
+    company: "FIITJEE",
+    title: "High School",
+    location: "Hyderabd, India",
+    GradeType: 'Percentage',
+    Grade: '88.6%',
+    description:(
+      <>
+        <strong>Important Subjects Taken: </strong> Concentration in Mathematics, Physics, and Chemistry
+      </>
+    ),
+    date: "Jul 2015 - Jul 2017",
+    year: 2017,
+  },
+  {
+    id: 1,
+    company: "Al Falah Internatinal School, DPS Jeddah",
+    title: "Schooling",
+    location: "Jeddah, Saudi Arabia",
+    GradeType: 'CGPA(out of 10)',
+    Grade: '9.2',
+    description:
+    (
+      <>
+      </>
+    ),
+    date: "Jul 2008 - Jul 2015",
+    year: '2015',
+  },
+]
+
+export default timelineElements

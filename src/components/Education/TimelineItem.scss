@@ -8,26 +8,35 @@
 
 }
 
-.display-1 {
+.display-1{
   font-family: 'Bruno Ace SC';
   margin-bottom: 20px;
 }
-
-.display-4 {
+.display-4{
   font-family: 'Montserrat Alternates';
 }
-
 .content {
   flex: 1;
 }
-
-.content h5 {
+.content h5{
   font-size: 1rem;
   font-family: 'Montserrat Alternates';
   color: gray;
   margin-bottom: 30px;
 }
-
 .content p {
   line-height: 1.6;
+}
+
+/* Adjust font size for smaller screens (up to 576px) sm*/
+@media (max-width: 576px) {
+  .timeline-item .content {
+    font-size: 14px;
+  }
+  .timeline-item .content .display-1{
+    font-size: 35px;
+  }
+  .timeline-item .content .display-4{
+    font-size: 25px;
+  }
 }

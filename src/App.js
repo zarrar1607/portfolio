@@ -1,6 +1,6 @@
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Layout from './components/Layout/Layout';
+/*import Layout from './components/Layout/Layout';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
@@ -26,15 +26,15 @@ function App() {
   );
 }
 
-export default App;
+export default App;*/
 
 
 
-/*
+
+function App() {
+  return (
 <div className="App">
       <header className="App-header">
-      <Home />
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -51,7 +51,12 @@ export default App;
         </p>
       </header>
     </div>
-*/
+    
+  );
+}
+
+export default App;
+
 //>npm i @emailjs/browser - contact form
 
 //https://react-spring.dev/docs/concepts/animated-elements

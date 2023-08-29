@@ -102,7 +102,7 @@ export default function ImageCarousel() {
             }}
           >
             {/* Load images from the 'Certificates' directory */}
-            <img src={`./Certificates/${item.filename}`} alt={`${item.title}`} style={{ maxHeight: getImageHeight() }} />
+            <img src={ process.env.PUBLIC_URL +`/Certificates/${item.filename}`} alt={`${item.title}`} style={{ maxHeight: getImageHeight() }} />
           </div>
           <div className={`slide-caption ${activeIndex === index ? 'active' : 'inactive'}`}>{`${item.title}`}</div>
         </SwiperSlide>

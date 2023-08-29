@@ -19,7 +19,7 @@ const Project = () => {
     return (
         <div className='project'>
             <div class='jumbotron' style={{justifyContent:'center', alignItems:'center'}}>
-                <Image src='/Under Construction.jpg' alt='Under Construction' fluid></Image>
+                <Image src={ process.env.PUBLIC_URL +'/Under Construction.jpg'} alt='Under Construction' fluid></Image>
             </div>
             <SideNav />
             {timelineElements.map((element, index) => (

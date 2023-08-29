@@ -42,7 +42,7 @@ const Home = () => {
             <Container className='jumbotron' fluid>
                 <Row className='align-items-center justify-content-center'>
                     <Col sm={12} md={6} xl={4} className='about_me_logo'>
-                        <Image src={ process.env.PUBLIC_URL +'.//ProfileImage/my_image.svg'} alt="My Profile" fluid/>
+                        <Image src={ process.env.PUBLIC_URL +'/ProfileImage/my_image.svg'} alt="My Profile" fluid/>
                     </Col>
                     <Col sm={12} md={6} xl={8} className='about_me d-flex flex-column'>
                         <h1 className='display-1 flex-shrink-0'>

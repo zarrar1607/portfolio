@@ -76,7 +76,7 @@ const Contact = () => {
                     <Row className=' w-100'>
                         <Col className='' xs={6}>
                             <a href="https://learn.microsoft.com/en-us/users/mohammedmisbahzarrar-8116/achievements#badges-section" rel="noopener noreferrer" target='blank_'>
-                                <Image src={ process.env.PUBLIC_URL +'/Icons/HackerRank.png'} className='img-fluid icon' rounded />
+                                <Image src={ process.env.PUBLIC_URL +'./Icons/Microsoft.png'} className='img-fluid icon' rounded />
                             </a>
                         </Col>
                         <Col className=' flex-grow-1 Microsoft icon_text' xs={6}>

@@ -1,7 +1,7 @@
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from './components/Layout/Layout';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import Experience from './components/Experience/Experience';
@@ -9,8 +9,23 @@ import Project from './components/Project/Project';
 import Education from './components/Education/Education';
 
 
-
 function App() {
+  return (
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+/*function App() {
   return (
     <div>
       <Routes>
@@ -24,7 +39,7 @@ function App() {
       </Routes>
     </div>
   );
-}
+}*/
 
 export default App;
 

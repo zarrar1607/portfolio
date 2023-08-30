@@ -11,12 +11,21 @@ root.render(
     <App />
   </React.StrictMode>
 );*/
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 
-ReactDOM.render(
+/*ReactDOM.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
     <App />
   </BrowserRouter>,
+  document.getElementById('root')
+);*/
+
+ReactDOM.render(
+  <React.StrictMode>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

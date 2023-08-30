@@ -11,8 +11,7 @@ import Education from './components/Education/Education';
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Routes>
+    <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/experience" element={<Experience />} />
@@ -21,25 +20,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
-    </BrowserRouter>
   );
 }
-
-/*function App() {
-  return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </div>
-  );
-}*/
 
 export default App;
 

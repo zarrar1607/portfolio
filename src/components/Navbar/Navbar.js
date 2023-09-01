@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Navbar.scss';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -7,9 +7,14 @@ import { NavLink, useLocation } from 'react-router-dom';
 
 const Navigation = () => {
   const location = useLocation();
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleNav = () => {
+    setExpanded(!expanded);
+  };
 
   return (
-    <Navbar expand="sm" className="nav-bar fixed-top">
+    <Navbar expand="sm" expanded={expanded} className="nav-bar fixed-top" onToggle={toggleNav}>
       <Container className="nav-bar-container">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

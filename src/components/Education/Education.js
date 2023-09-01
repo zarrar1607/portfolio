@@ -60,7 +60,7 @@ const Education = () => {
   }, []);
 
   return (
-    <>
+    <div className='education'>
       <div ref={cubeRef} className="cube"></div>
 
       {timelineElements.map((element, index) => (
@@ -87,7 +87,7 @@ const Education = () => {
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 };
 export default Education;

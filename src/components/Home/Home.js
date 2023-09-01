@@ -38,7 +38,7 @@ const Home = () => {
 
     return (
 
-        <>
+        <div className='home'>
             <Container className='jumbotron' fluid>
                 <Row className='align-items-center justify-content-center'>
                     <Col sm={12} md={6} xl={4} className='about_me_logo'>
@@ -69,7 +69,7 @@ const Home = () => {
                         <h1 className='display-3'>Skills{/*{parentSize.width - 5} x {parentSize.height - 15}*/}</h1>
                     </Col>
                 </Row>
-                <Row className='w-100 flex-grow-1 about_me_content mb-3' style={{ maxHeight: '100%', maxWidth: '100%' }}>
+                <Row className='w-100 flex-grow-1 about_me_content mb-3' style={{ maxHeight: '100%', maxWidth: '100%', marginLeft:'0px', marginRight:'0px' }}>
                     <Col style={{ padding: 0, border: 0 }} ref={impCol}>
                         <WordCloud words={words} finalWidth={parentSize.width - 5} finalHeight={parentSize.height * 0.85} />
                     </Col>
@@ -82,11 +82,11 @@ const Home = () => {
                         <h1 className='display-3'>Certs</h1>
                     </Col>
                 </Row>
-                <Row className='w-100 h-100 about_me_content' >
+                <Row className='w-100 h-100 about_me_content ' style={{ marginLeft:'0px', marginRight:'0px', marginBottom:'5px' }} >
                     <ImageCarousel />
                 </Row>
             </Container>
-        </>
+        </div>
     );
 };
 

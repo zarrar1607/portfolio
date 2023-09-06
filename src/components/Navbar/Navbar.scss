@@ -1,8 +1,9 @@
 .nav-bar {
-  box-shadow: 0 10px 5px rgba(58, 0, 110, 0.4); /* Adjust the values as needed */
+  box-shadow: 0 10px 5px rgba(58, 0, 110, 0.4);
+  /* Adjust the values as needed */
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
-  background-color: transparent!important;
+  background-color: transparent !important;
   backdrop-filter: blur(8px);
 }
 
@@ -44,12 +45,25 @@
   background-color: #3A006E;
 }
 
-/*.navbar-collapse.show:not {
-  transition: max-height 0.3s ease-in-out; 
-  max-height: 0;
-  overflow: hidden;
-}
 
-.navbar-collapse.show {
-  max-height: 500px; 
-}*/
+@media (max-width: 576px) {
+
+  /* Adjust the max-width to your desired mobile breakpoint */
+  .navbar-collapse {
+    transition: max-height 0.3s ease-in-out;
+    /* Adjust the duration and easing as needed */
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .navbar-collapse.show {
+    max-height: 500px;
+    /* Adjust the max height to your content's height */
+  }
+}
+@media (min-width: 576px) {
+
+  .navbar-collapse {
+    max-height: 100%!important;
+  }
+}

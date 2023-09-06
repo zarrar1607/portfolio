@@ -30,10 +30,17 @@ let timelineElements = [
     title: "Full-Stack Software Developer",
     location: "Kansas, United States",
     description:
-    (
-      <>
-      </>
-    ),
+      (
+        <>
+          <ul>
+            <li>Gained hands-on experience in C++ and the Qt framework, specializing in coding, debugging, and optimizing software in a trading/financial company.</li>
+            <li>Designed user-friendly interfaces using the QT UI Manager, enhancing the overall user experience.</li>
+            <li>Improved software efficiency by 75% through backend file import optimizations, utilizing QThreads and data processing techniques.</li>
+            <li>Acquired proficiency in both front-end and back-end development tasks, contributing to a well-rounded skill set for software development roles.</li>
+            <li>Successfully transformed backend processes from asynchronous to synchronous, eliminating delays in communication between modules thereby enhancing system efficiency, no loss of signals, and ensuring seamless data flow within the application.</li>
+          </ul>
+        </>
+      ),
     date: "May 2023 - Aug 2023",
     year: 2023,
   },
@@ -105,10 +112,10 @@ let timelineElements = [
     company: "InMovidu Technologies Pvt Limited",
     title: "Web Developer Intern",
     location: "Remote",
-    description:(
+    description: (
       <>
         Internship program in Web Development HTML and CSS:
-        <br/>
+        <br />
         Initially, the organizations taught the freshers, and after 2 weeks gave the assignment to complete.
       </>
     ),
@@ -119,25 +126,25 @@ let timelineElements = [
     id: 1,
     company: "JPMorgan Chase & Co.",
     title: "Intern",
-    location: "Dragontail, Ascana",
+    location: "Remote",
     description:
-    (
-      <>
-        Over the period of May 2020, through the InsideSherpa platform, I completed practical task modules in:
-        <br/>
-        <ul>
-          <li>
-            Establishing Financial Data Feeds
-          </li>
-          <li>
-            Frontend Web Development
-          </li>
-          <li>
-            Data Visualization with Chase's Perspective
-          </li>
-        </ul>
-      </>
-    ),
+      (
+        <>
+          Over the period of May 2020, through the InsideSherpa platform, I completed practical task modules in:
+          <br />
+          <ul>
+            <li>
+              Establishing Financial Data Feeds
+            </li>
+            <li>
+              Frontend Web Development
+            </li>
+            <li>
+              Data Visualization with Chase's Perspective
+            </li>
+          </ul>
+        </>
+      ),
     date: "May 2020",
     year: '2020',
   },

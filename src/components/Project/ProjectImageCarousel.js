@@ -33,6 +33,10 @@ export default function ProjectImageCarousel(project_name) {
   const [slidesPerView, setSlidesPerView] = useState(3);
   const [activeIndex, setActiveIndex] = useState(0);
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+const [selectedItem, setSelectedItem] = useState(null);
+
+
   useEffect(() => {
     const handleResize = () => {
       const windowWidth = window.innerWidth;
@@ -120,14 +124,32 @@ export default function ProjectImageCarousel(project_name) {
         >
           <div
             className={`slide-content ${activeIndex === index ? 'active' : 'inactive'}`}
-            onClick={() => handleSlideClick(index)}
+            onClick={() => {handleSlideClick(index);
+              setSelectedItem(item);
+              setIsModalOpen(true);
+            }}
             style={{
               opacity: calculateOpacity(index),
               transition: 'transform 0.6s, opacity 0.5s', // Add CSS transition property for smoother effect
             }}
 
           >
-            <img src={process.env.PUBLIC_URL + `/Certificates/${item.filename}`} alt={`${item.title}`} style={{ maxHeight: getImageHeight() }} />
+            
+            {/* Check if the item has a video URL, and if so, embed the video */}
+            
+            {item.videoUrl ? (
+              <iframe
+                width="100%" // Set the width as needed
+                height="100%" // Set the height as needed
+                src={item.videoUrl}
+                allowFullScreen
+                title={`Video ${index}`}
+              />
+            ) : (
+              <img src={process.env.PUBLIC_URL + `/Certificates/${item.filename}`} alt={`${item.title}`} style={{ maxHeight: getImageHeight() }} />
+            )}
+
+              
           </div>
           <div className={`slide-caption ${activeIndex === index ? 'active' : 'inactive'}`}>{`${item.title}`}</div>
         </SwiperSlide>

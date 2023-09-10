@@ -52,8 +52,12 @@
 .tag:hover {
   transform: scale(1.1); /* Scale up the tag on hover */
 }
-.description{
+.project-item  .description{
   margin-top: 25px;
+}
+.project-item .description a{
+  text-transform: none;
+  color: black;
 }
 
 /* Adjust font size for smaller screens (up to 576px) sm*/
@@ -71,3 +75,4 @@
     font-size: 20px;
   }
 }
+

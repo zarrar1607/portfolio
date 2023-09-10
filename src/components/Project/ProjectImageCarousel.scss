@@ -54,3 +54,20 @@
   font-size: 16px;
   font-weight: bold;
 }
+
+
+/* Styles for slide captions */
+.project .slide-caption {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Audiowide";
+  letter-spacing: 0.25rem;
+  text-align: center;
+  transition: opacity 0.5s ease; /* Smooth opacity transition for captions */
+  color: #ffff;
+}
+.project .slide-caption.inactive {
+  opacity: 0; /* Hide inactive slide captions */
+}

@@ -11,17 +11,27 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import './ImageCarousel.scss';
+import './ProjectImageCarousel.scss';
+import ProjectImageItems from './ProjectImageItems';
 
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow, Autoplay]);
 
-export default function ImageCarousel(key, image_path) {
+export default function ProjectImageCarousel(project_name) {
+  //project_name = "f1tenth";
+  const filteredItems = ProjectImageItems.reduce((filtered, item) => {
+    console.log('item.projectname:', item.projectname);
+    console.log('project_name:', project_name.project_name);
+    if (item.projectname === project_name.project_name) {
+      console.log('Matched');
+      filtered.push(item);
+    }
+    return filtered;
+  }, []);
+  console.log('filtered items:', filteredItems);
+
   const [slidesPerView, setSlidesPerView] = useState(3);
   const [activeIndex, setActiveIndex] = useState(0);
-
-  const importAll = (r) => r.keys().map(r);
-  const images = importAll(require.context('.//Project', false, /\.(png|jpe?g|svg)$/));
 
   useEffect(() => {
     const handleResize = () => {
@@ -68,6 +78,7 @@ export default function ImageCarousel(key, image_path) {
       return 200;
     }
   };
+
   const getTopPadding = () => {
     const windowWidth = window.innerWidth;
     if (windowWidth >= 1200) {
@@ -89,7 +100,7 @@ export default function ImageCarousel(key, image_path) {
       grabCursor
       //loop
       autoplay={{
-        delay:  1500, // Time between slides (in ms)
+        delay: 1500, // Time between slides (in ms)
         disableOnInteraction: false, // Keep autoplay after user interactions
       }}
       onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
@@ -100,23 +111,25 @@ export default function ImageCarousel(key, image_path) {
         depth: 100,
         stretch: -10,
       }}
-      
+
     >
-      {images.map((image, index) => (
-        <SwiperSlide key={index} 
-        style={{paddingTop:getTopPadding()}}
+
+      {filteredItems.map((item, index) => (
+        <SwiperSlide key={index}
+          style={{ paddingTop: getTopPadding() }}
         >
           <div
             className={`slide-content ${activeIndex === index ? 'active' : 'inactive'}`}
             onClick={() => handleSlideClick(index)}
-            style={{ 
-              opacity: calculateOpacity(index) ,
+            style={{
+              opacity: calculateOpacity(index),
               transition: 'transform 0.6s, opacity 0.5s', // Add CSS transition property for smoother effect
             }}
-            
+
           >
-            <img src={image} alt={`Image ${index + 1}`} style={{ maxHeight: getImageHeight() }} />
+            <img src={process.env.PUBLIC_URL + `/Certificates/${item.filename}`} alt={`${item.title}`} style={{ maxHeight: getImageHeight() }} />
           </div>
+          <div className={`slide-caption ${activeIndex === index ? 'active' : 'inactive'}`}>{`${item.title}`}</div>
         </SwiperSlide>
       ))}
     </Swiper>

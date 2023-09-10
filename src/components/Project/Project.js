@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import ProjectItem from './ProjectItem';
 import timelineElements from "./timelineElements"
 import './Project.scss'
-import ImageCarousel from './ImageCarousel';
+import ImageCarousel from './ProjectImageCarousel';
 
 import SideNav from './SideNav.js';
 import Home from "../Home/Home.js";
@@ -18,9 +18,9 @@ import { Row, Image } from 'react-bootstrap';
 const Project = () => {
     return (
         <div className='project'>
-            <div class='jumbotron' style={{justifyContent:'center', alignItems:'center'}}>
+            {/*<div class='jumbotron' style={{justifyContent:'center', alignItems:'center'}}>
                 <Image src={ process.env.PUBLIC_URL +'/Under Construction.jpg'} alt='Under Construction' fluid></Image>
-            </div>
+            </div>*/}
             <SideNav />
             {timelineElements.map((element, index) => (
                 <div
@@ -40,7 +40,7 @@ const Project = () => {
                             image_path={element.image_path}
                     />
                     <div className='project_images' >
-                        <ImageCarousel key={element.id} image_path={element.image_path} />
+                        <ImageCarousel project_name={element.project_name} />
                     </div>
                 </div>
             ))}

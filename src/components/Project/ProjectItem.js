@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProjectItem.scss';
 import { Col, Row } from 'react-bootstrap';
-import ImageCarousel from './ImageCarousel';
+import ImageCarousel from './ProjectImageCarousel';
 
 
 const ProjectItem = ({id, project_title, project_type, project_domain, date, year, skills, description, image_path }) => {

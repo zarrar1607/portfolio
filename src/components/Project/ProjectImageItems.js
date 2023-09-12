@@ -1,6 +1,6 @@
 const ProjectImageItems = [
   { projectname: "Fine Tuning DeepPiCar", videoUrl: 'https://www.youtube.com/embed/gDC6Y_qBBx4', title: 'Demo', value: 40 },
-  { projectname: "f1tenth", filename: 'DeepLearning.AI TensorFlow Developer.jpg', title: 'f1tenth', value: 40 },
+  //{ projectname: "Fine Tuning DeepPiCar", filename: 'DeepLearning.AI TensorFlow Developer.jpg', title: 'f1tenth', value: 40 },
 
 ];
 // Sort the array first by project name and then by value

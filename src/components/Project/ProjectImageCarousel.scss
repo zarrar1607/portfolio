@@ -42,20 +42,6 @@
   /* Push the inactive slides behind the active slide */
 }
 
-.project caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-
 /* Styles for slide captions */
 .project .slide-caption {
   display: flex;

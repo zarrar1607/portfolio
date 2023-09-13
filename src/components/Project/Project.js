@@ -22,9 +22,12 @@ const Project = () => {
                 <Image src={ process.env.PUBLIC_URL +'/Under Construction.jpg'} alt='Under Construction' fluid></Image>
             </div>*/}
             <SideNav />
+            <div style = {{paddingTop:"100px"}}>
+
+            </div>
             {timelineElements.map((element, index) => (
                 <div
-                    className="jumbotron"
+                    className=""
                     style={{ border: 'none' }}
                     key={element.id}
                 >

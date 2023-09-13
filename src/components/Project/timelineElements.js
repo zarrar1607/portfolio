@@ -20,7 +20,6 @@ let timelineElements = [
         <img src={process.env.PUBLIC_URL + `/Coming Soon.webp`} alt={`Coming Soon`} style={{height:'300px'}}/> 
       </>
     ),
-    image_path: './/Project/f1tenth/',
   },
   {
     id: 6,
@@ -47,8 +46,35 @@ let timelineElements = [
         adapting deep learning models for real-world edge computing applications."
       </>
     ),
-    image_path: './/Project/f1tenth',
   },
+
+  {
+    id: 5,
+    project_title: "Synergistic Articulated Robotic Manipulator (SARM)",
+    project_name: "SARM",
+    project_type: "Bachelors Project, Osmania University",
+    project_domain: [
+      'DeepLearning',
+      'Robotics',
+    ],
+    date: "Sept 2019 - Jun 2021",
+    year: 2023,
+    skills: [
+      'Python',
+      'C++',
+      'TensorFlow',
+    ],
+    description: (
+      <>
+        In a team of 6, created a prototype for a completely autonomous industrial robotic arm with a combination 
+        of inverse kinematics program and computer vision to pick objects.
+        Developed a computer vision using CNN with the aid of the TensorFlow API for the arm, so that it could identify 
+        and locate known objects within a workspace. Notably, we implemented a critical component - mapping the physical world to image coordinates. 
+        This feature enabled the robotic arm to recognize and precisely locate objects within its workspace, paving the way for intelligent and context-aware interactions. 
+      </>
+    ),
+  },
+
 ]
 
 export default timelineElements

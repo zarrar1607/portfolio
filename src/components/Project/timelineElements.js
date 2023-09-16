@@ -74,6 +74,34 @@ let timelineElements = [
       </>
     ),
   },
+  {
+    id: 5,
+    project_title: "TRM(Team Robocon MJCET) Website",
+    project_name: "TRM_Website",
+    project_type: "Department HOD Request, Osmania University",
+    project_domain: [
+      'Software',
+    ],
+    date: "Aug 2020 - Jul 2020",
+    year: 2023,
+    skills: [
+      'HTML5',
+      'CSS3',
+      'BootStrap4',
+      'JavaScript (ES6)',
+      'JQuerry',
+      'Agile Methodology',
+    ],
+    description: (
+      <>
+        Developed, designed, and documented a website template for the university team in response to a request from the Head of the Department of Electrical and Computer Engineering (ECE). 
+        This template, primarily focused on the Front-End, represents a fundamental design. The process began with creating low-fidelity wireframes and obtaining necessary approvals. 
+        This project marked their initial experience with proper website design. The website features team information, achievements, robots designed by the team, and various forms.
+        <br/>
+        Website Link: <a href="https://zarrar1607.github.io/Team-Robocon-MJCET-Website/" target="_blank">TRM(Team Robocon MJCET) Website Template</a>
+      </>
+    ),
+  },
 
 ]
 

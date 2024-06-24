@@ -153,10 +153,26 @@ const Education = () => {
 
   return (
     <div className="parallax-container" ref={containerRef}>
-      <div className={`card ${currentCard === 1 ? 'active' : ''}`}>Card 1</div>
-      <div className={`card ${currentCard === 2 ? 'active' : ''}`}>Card 2</div>
-      <div className={`card ${currentCard === 3 ? 'active' : ''}`}>Card 3</div>
+      <div className={`card ${currentCard === 1 ? 'active' : ''}`}>
+        <div className="card-header">Header 1</div>
+        <div className="card-content">
+          Content for Card 1
+        </div>
+      </div>
+      <div className={`card ${currentCard === 2 ? 'active' : ''}`}>
+        <div className="card-header">Header 2</div>
+        <div className="card-content">
+          Content for Card 2
+        </div>
+      </div>
+      <div className={`card ${currentCard === 3 ? 'active' : ''}`}>
+        <div className="card-header">Header 3</div>
+        <div className="card-content">
+          Content for Card 3
+        </div>
+      </div>
     </div>
   );
 };
+
 export default Education;

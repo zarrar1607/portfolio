@@ -1,5 +1,29 @@
 let timelineElements = [
   {
+    id: 8,
+    project_title: "Portfolio",
+    //project_name: "f1tenth",
+    project_type: "",
+    project_domain: [
+      'Software',
+    ],
+    date: "Mar 2023 - Sep 2023",
+    year: 2023,
+    skills: [
+      'React',
+      'Figma',
+      'BootStrap',
+      'JavaScript',
+      'HTML',
+      'CSS'
+    ],
+    description: (
+      <>
+         
+      </>
+    ),
+  },
+  {
     id: 7,
     project_title: "End-to-End Network for F1tenth",
     //project_name: "f1tenth",
@@ -57,7 +81,7 @@ let timelineElements = [
       'DeepLearning',
       'Robotics',
     ],
-    date: "Sept 2019 - Jun 2021",
+    date: "Sep 2019 - Jun 2021",
     year: 2023,
     skills: [
       'Python',

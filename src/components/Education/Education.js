@@ -1,4 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
+// import { MouseParallax, ScrollParallax, ScrollParallaxHandle } from "react-just-parallax";
+import { ParallaxProvider } from 'react-scroll-parallax';
+import { Parallax, ParallaxBanner } from 'react-scroll-parallax';
+
+// import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+
 import TimelineItem from './TimeLineItem';
 import timelineElements from "./timelineElements"
 import './Education.scss'
@@ -125,53 +131,98 @@ import './CardScroller.scss';
 //   };
 // }, []);
 
+// const Education = () => {
+//   const [currentCard, setCurrentCard] = useState(1);
+//   const containerRef = useRef(null);
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const scrollTop = containerRef.current.scrollTop;
+//       const containerHeight = containerRef.current.clientHeight;
+
+//       if (scrollTop < containerHeight / 2) {
+//         setCurrentCard(1);
+//       } else if (scrollTop < containerHeight * 1.5) {
+//         setCurrentCard(2);
+//       } else {
+//         setCurrentCard(3);
+//       }
+//     };
+
+//     const container = containerRef.current;
+//     container.addEventListener('scroll', handleScroll);
+
+//     return () => {
+//       container.removeEventListener('scroll', handleScroll);
+//     };
+//   }, []);
+
+//   return (
+//     <div className="parallax-container" ref={containerRef}>
+//       <div className={`card ${currentCard === 1 ? 'active' : ''}`}>
+//         <div className="card-header">Header 1</div>
+//         <div className="card-content">
+//           Content for Card 1
+//         </div>
+//       </div>
+//       <div className={`card ${currentCard === 2 ? 'active' : ''}`}>
+//         <div className="card-header">Header 2</div>
+//         <div className="card-content">
+//           Content for Card 2
+//         </div>
+//       </div>
+//       <div className={`card ${currentCard === 3 ? 'active' : ''}`}>
+//         <div className="card-header">Header 3</div>
+//         <div className="card-content">
+//           Content for Card 3
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
 const Education = () => {
-  const [currentCard, setCurrentCard] = useState(1);
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = containerRef.current.scrollTop;
-      const containerHeight = containerRef.current.clientHeight;
-
-      if (scrollTop < containerHeight) {
-        setCurrentCard(1);
-      } else if (scrollTop < containerHeight * 2) {
-        setCurrentCard(2);
-      } else {
-        setCurrentCard(3);
-      }
-    };
-
-    const container = containerRef.current;
-    container.addEventListener('scroll', handleScroll);
-
-    return () => {
-      container.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <div className="parallax-container" ref={containerRef}>
-      <div className={`card ${currentCard === 1 ? 'active' : ''}`}>
-        <div className="card-header">Header 1</div>
-        <div className="card-content">
-          Content for Card 1
-        </div>
-      </div>
-      <div className={`card ${currentCard === 2 ? 'active' : ''}`}>
-        <div className="card-header">Header 2</div>
-        <div className="card-content">
-          Content for Card 2
-        </div>
-      </div>
-      <div className={`card ${currentCard === 3 ? 'active' : ''}`}>
-        <div className="card-header">Header 3</div>
-        <div className="card-content">
-          Content for Card 3
-        </div>
-      </div>
-    </div>
+    <ParallaxProvider>
+      <ParallaxBanner
+        className="banner"
+        layers={[
+          {
+            children: (
+              <div className="card">
+                <div className="card-header">Header 1</div>
+                <div className="card-content">Content for Card 1</div>
+              </div>
+            ),
+            translateY: [0, 0],
+            shouldAlwaysCompleteAnimation: true,
+            expanded: false,
+          },
+          {
+            children: (
+              <div className="card">
+                <div className="card-header">Header 2</div>
+                <div className="card-content">Content for Card 2</div>
+              </div>
+            ),
+            translateY: [80, 0],
+            shouldAlwaysCompleteAnimation: true,
+            expanded: false,
+          },
+          {
+            children: (
+              <div className="card">
+                <div className="card-header">Header 3</div>
+                <div className="card-content">Content for Card 3</div>
+              </div>
+            ),
+            translateY: [160, 0],
+            shouldAlwaysCompleteAnimation: true,
+            expanded: false,
+          },
+        ]}
+      />
+    </ParallaxProvider>
   );
 };
 

@@ -180,10 +180,28 @@ import './CardScroller.scss';
 //     </div>
 //   );
 // };
+const ScrollContainer = ({ children }) => {
+  const [scrollElement, setScrollElement] = useState(null);
+  const containerRef = useRef();
+
+  useEffect(() => {
+    setScrollElement(containerRef.current);
+  }, []);
+
+  return (
+    <div className="scroll-container" ref={containerRef}>
+      {scrollElement && (
+        <ParallaxProvider scrollContainer={scrollElement}>
+          {children}
+        </ParallaxProvider>
+      )}
+    </div>
+  );
+};
 
 const Education = () => {
   return (
-    <ParallaxProvider>
+    <ScrollContainer>
       <ParallaxBanner
         className="banner"
         layers={[
@@ -194,7 +212,7 @@ const Education = () => {
                 <div className="card-content">Content for Card 1</div>
               </div>
             ),
-            translateY: [0, 0],
+            translateY: [0,80],
             shouldAlwaysCompleteAnimation: true,
             expanded: false,
           },
@@ -205,7 +223,7 @@ const Education = () => {
                 <div className="card-content">Content for Card 2</div>
               </div>
             ),
-            translateY: [80, 0],
+            translateY: [10, 80],
             shouldAlwaysCompleteAnimation: true,
             expanded: false,
           },
@@ -216,13 +234,24 @@ const Education = () => {
                 <div className="card-content">Content for Card 3</div>
               </div>
             ),
-            translateY: [160, 0],
+            translateY: [20, 80],
+            shouldAlwaysCompleteAnimation: true,
+            expanded: false,
+          },
+          {
+            children: (
+              <div className="card">
+                <div className="card-header">Header 4</div>
+                <div className="card-content">Content for Card 4</div>
+              </div>
+            ),
+            translateY: [30, 80],
             shouldAlwaysCompleteAnimation: true,
             expanded: false,
           },
         ]}
       />
-    </ParallaxProvider>
+    </ScrollContainer>
   );
 };
 

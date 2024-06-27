@@ -213,6 +213,7 @@ const Education = () => {
               </div>
             ),
             translateY: [0,80],
+            // translateX: [0, 50],
             shouldAlwaysCompleteAnimation: true,
             expanded: false,
           },
@@ -223,7 +224,7 @@ const Education = () => {
                 <div className="card-content">Content for Card 2</div>
               </div>
             ),
-            translateY: [10, 80],
+            translateY: [0, 70],
             shouldAlwaysCompleteAnimation: true,
             expanded: false,
           },
@@ -234,7 +235,8 @@ const Education = () => {
                 <div className="card-content">Content for Card 3</div>
               </div>
             ),
-            translateY: [20, 80],
+            translateY: [0, 60],
+            // translateX: [0, 50],
             shouldAlwaysCompleteAnimation: true,
             expanded: false,
           },
@@ -245,7 +247,7 @@ const Education = () => {
                 <div className="card-content">Content for Card 4</div>
               </div>
             ),
-            translateY: [30, 80],
+            translateY: [0, 50],
             shouldAlwaysCompleteAnimation: true,
             expanded: false,
           },

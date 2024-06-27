@@ -200,59 +200,27 @@ const ScrollContainer = ({ children }) => {
 };
 
 const Education = () => {
+  const layers = timelineElements.map((element, index) => ({
+    children: (
+      <div className="card">
+        <div className="card-header display-1">{element.title}</div>
+        <div className="card-content ">
+          <div className='display-7'><strong>{element.company}</strong></div>
+          <div className='display-7'>{element.GradeType}: {element.Grade}</div>
+          {/* <p>{element.location}</p> */}
+          {/* <p>{element.date}</p> */}
+          {/* <div>{element.description}</div> */}
+        </div>
+      </div>
+    ),
+    translateY: [0, 80 - (index * 10)],
+    shouldAlwaysCompleteAnimation: true,
+    expanded: false,
+  }));
+
   return (
     <ScrollContainer>
-      <ParallaxBanner
-        className="banner"
-        layers={[
-          {
-            children: (
-              <div className="card">
-                <div className="card-header">Header 1</div>
-                <div className="card-content">Content for Card 1</div>
-              </div>
-            ),
-            translateY: [0,80],
-            // translateX: [0, 50],
-            shouldAlwaysCompleteAnimation: true,
-            expanded: false,
-          },
-          {
-            children: (
-              <div className="card">
-                <div className="card-header">Header 2</div>
-                <div className="card-content">Content for Card 2</div>
-              </div>
-            ),
-            translateY: [0, 70],
-            shouldAlwaysCompleteAnimation: true,
-            expanded: false,
-          },
-          {
-            children: (
-              <div className="card">
-                <div className="card-header">Header 3</div>
-                <div className="card-content">Content for Card 3</div>
-              </div>
-            ),
-            translateY: [0, 60],
-            // translateX: [0, 50],
-            shouldAlwaysCompleteAnimation: true,
-            expanded: false,
-          },
-          {
-            children: (
-              <div className="card">
-                <div className="card-header">Header 4</div>
-                <div className="card-content">Content for Card 4</div>
-              </div>
-            ),
-            translateY: [0, 50],
-            shouldAlwaysCompleteAnimation: true,
-            expanded: false,
-          },
-        ]}
-      />
+      <ParallaxBanner className="banner" layers={layers} />
     </ScrollContainer>
   );
 };

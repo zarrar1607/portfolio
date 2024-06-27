@@ -115,12 +115,13 @@
     font-size: 2rem;
     background: white;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    opacity: 0.95;
+    opacity: 1.0;
     padding: 5px;
     // box-sizing: border-box;
     // height: 300px; /* Example height */
-    // width: 300px; /* Example width */
+    width: 600px; /* Example width */
     margin: 5px;
+    border-radius: 2rem;
   
     /* Center the cards */
     position: absolute;
@@ -131,13 +132,14 @@
   
   .card-header {
     width: 100%;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-bottom: 0;
     font-weight: bold;
     text-align: center;
     padding: 5px;
+    background-color: #3A006E;
+    color: white;
   }
-  
   .card-content {
     width: 100%;
     font-size: 1.5rem;
@@ -145,30 +147,15 @@
     box-sizing: border-box;
     border: 2px solid;
     text-align: center;
+    border-color: #3A006E;
+    border-radius: 0rem 0rem 2rem 2rem;
   }
-  
-  /* Specific card header and border colors */
-  .card:nth-child(1) .card-header {
-    background: #ff6f61;
+  .card-header:first-child{
+    border-radius: 2rem 2rem 0 0;
   }
-  
-  .card:nth-child(1) .card-content {
-    border-color: #ff6f61;
+  .display-1{
+    font-family: 'Bruno Ace SC';
   }
-  
-  .card:nth-child(2) .card-header {
-    background: #6b5b95;
+  .display-7{
+    font-family: 'Montserrat Alternates';
   }
-  
-  .card:nth-child(2) .card-content {
-    border-color: #6b5b95;
-  }
-  
-  .card:nth-child(3) .card-header {
-    background: #88b04b;
-  }
-  
-  .card:nth-child(3) .card-content {
-    border-color: #88b04b;
-  }
-  

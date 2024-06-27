@@ -1,19 +1,33 @@
 let timelineElements = [
   {
-    id: 4,
-    company: "The University of Kansas",
-    title: "Masters in Computer Science",
-    location: "Kansas, United States",
-    GradeType: 'CGPA',
-    Grade: '4.0',
-    description: (
+    id: 1,
+    company: "Al Falah Internatinal School, DPS Jeddah",
+    title: "Schooling",
+    location: "Jeddah, Saudi Arabia",
+    GradeType: 'CGPA(out of 10)',
+    Grade: '9.2',
+    description:
+    (
       <>
-        <strong>Important Subjects Taken: </strong> Advance Data Science, Mobile Security, Information Retrival, 
-        Computer Vision, Machine Learning, Embedded ML, Mobile Security, Advance Data Structures & Algorithm
       </>
     ),
-    date: "Aug 2022 - Present",
-    year: 2024,
+    date: "Jul 2008 - Jul 2015",
+    year: '2015',
+  },
+  {
+    id: 2,
+    company: "FIITJEE",
+    title: "High School",
+    location: "Hyderabd, India",
+    GradeType: 'Percentage',
+    Grade: '88.6%',
+    description:(
+      <>
+        <strong>Important Subjects Taken: </strong> Concentration in Mathematics, Physics, and Chemistry
+      </>
+    ),
+    date: "Jul 2015 - Jul 2017",
+    year: 2017,
   },
   {
     id: 3,
@@ -34,34 +48,20 @@ let timelineElements = [
     year: 2021,
   },
   {
-    id: 2,
-    company: "FIITJEE",
-    title: "High School",
-    location: "Hyderabd, India",
-    GradeType: 'Percentage',
-    Grade: '88.6%',
-    description:(
+    id: 4,
+    company: "The University of Kansas",
+    title: "Masters in Computer Science",
+    location: "Kansas, United States",
+    GradeType: 'CGPA',
+    Grade: '4.0',
+    description: (
       <>
-        <strong>Important Subjects Taken: </strong> Concentration in Mathematics, Physics, and Chemistry
+        <strong>Important Subjects Taken: </strong> Advance Data Science, Mobile Security, Information Retrival, 
+        Computer Vision, Machine Learning, Embedded ML, Mobile Security, Advance Data Structures & Algorithm
       </>
     ),
-    date: "Jul 2015 - Jul 2017",
-    year: 2017,
-  },
-  {
-    id: 1,
-    company: "Al Falah Internatinal School, DPS Jeddah",
-    title: "Schooling",
-    location: "Jeddah, Saudi Arabia",
-    GradeType: 'CGPA(out of 10)',
-    Grade: '9.2',
-    description:
-    (
-      <>
-      </>
-    ),
-    date: "Jul 2008 - Jul 2015",
-    year: '2015',
+    date: "Aug 2022 - Present",
+    year: 2024,
   },
 ]
 

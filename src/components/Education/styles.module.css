@@ -1,0 +1,84 @@
+.container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden!important;
+  scrollbar-width: none!important; /* Firefox */
+  -ms-overflow-style: none!important; /* IE and Edge */
+}
+.container::-webkit-scrollbar {
+    display: none!important; /* Chrome, Safari, and Opera */
+  }
+  
+.background {
+  background: linear-gradient(#e66465, #9198e5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -1;
+  
+  overflow: hidden!important;
+  scrollbar-width: none!important; /* Firefox */
+  -ms-overflow-style: none!important; /* IE and Edge */
+}
+
+.scrollText {
+  font-size: 1.5rem;
+  color: white;
+  z-index: 1;
+  scrollbar-width: none!important; /* Firefox */
+  -ms-overflow-style: none!important; /* IE and Edge */
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  height: 10rem;
+  width: 25%;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 2;
+  scrollbar-width: none!important; /* Firefox */
+  -ms-overflow-style: none!important; /* IE and Edge */
+}
+
+.parallax {
+  margin-right: 15%;
+  scrollbar-width: none!important; /* Firefox */
+  -ms-overflow-style: none!important; /* IE and Edge */
+}
+
+.sticky {
+  margin-left: 15%;
+  background-color: #ff6d6d;
+  scrollbar-width: none!important; /* Firefox */
+  -ms-overflow-style: none!important; /* IE and Edge */
+}
+
+.blue {
+  background-color: #5b65ad;
+  color: white;
+}
+
+.purple {
+  background-color: #9d65d0;
+  color: white;
+}
+
+@media (max-width: 750px) {
+  .card {
+    width: 40%;
+  }
+
+  .parallax {
+    margin-right: 1.5rem;
+  }
+
+  .sticky {
+    margin-left: 1.5rem;
+  }
+}

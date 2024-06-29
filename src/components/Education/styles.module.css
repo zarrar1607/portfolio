@@ -10,7 +10,7 @@
   }
   
 .background {
-  background: linear-gradient(#e66465, #9198e5);
+  /* background: linear-gradient(#e66465, #9198e5); */
   position: absolute;
   top: 0;
   bottom: 0;
@@ -31,32 +31,64 @@
   scrollbar-width: none!important; /* Firefox */
   -ms-overflow-style: none!important; /* IE and Edge */
 }
-
-.card {
+.card{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   font-size: 1.25rem;
-  height: 10rem;
-  width: 25%;
+  height: 23rem;
+  width: 50%;
   text-align: center;
   border-radius: 10px;
   z-index: 2;
-  scrollbar-width: none!important; /* Firefox */
-  -ms-overflow-style: none!important; /* IE and Edge */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid;
+  border-color: #3A006E;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: white;
+}
+.card_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  background-color: #3A006E;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Bruno Ace SC';
+  margin-bottom: 5px;
+  /* overflow: hidden; */
+}
+.title{
+    font-size: 2.0rem;
+}
+.card_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+  h5{
+    margin-bottom: 0px;
+  }
+  p{
+    font-size: 1.0rem;
+  }
 }
 
 .parallax {
   margin-right: 15%;
-  scrollbar-width: none!important; /* Firefox */
-  -ms-overflow-style: none!important; /* IE and Edge */
 }
 
 .sticky {
-  margin-left: 15%;
-  background-color: #ff6d6d;
-  scrollbar-width: none!important; /* Firefox */
-  -ms-overflow-style: none!important; /* IE and Edge */
 }
 
 .blue {
@@ -70,15 +102,20 @@
 }
 
 @media (max-width: 750px) {
+
   .card {
-    width: 40%;
+    width: 90%;
   }
 
   .parallax {
     margin-right: 1.5rem;
   }
 
-  .sticky {
-    margin-left: 1.5rem;
+  /* .sticky {
+    margin-left: 0;
+    margin: 1.0rem;
+  } */
+  .title{
+    font-size: 1.5rem;
   }
 }

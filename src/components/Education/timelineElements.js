@@ -38,10 +38,10 @@ let timelineElements = [
     Grade: '3.9',
     description: (
       <>
-        <strong>Important Subjects Taken: </strong> Prblem Solving using C, Obj. Oriented Prog. using C++, Data Structures using C++,
-        Discrete Maths, Obj. Oriented Prog. using Java, Database Managment Systems, Operating Systems, Computer Grphics, 
-        Artificial Intelligence, Design & Analysis of Algorithm, Software Engineering, Web Prog, Computer N/W, Graph Theory,
-        Compiler Construction, Distributed Systems, Information Security, Data Mining, S/W Testing, Machine Learning, Cloud Computing
+        <strong>Important Subjects Taken: </strong> C/C++, JAVA, Data Structures, DBMS, OS, Computer Grphics, 
+         Analysis of Algorithm, Software Engineering, Web Prog., Computer N/W, Discrete Maths, Graph Theory,
+         Distributed Systems, Compiler Construction, Security, 
+         AI, ML, Cloud Computing
       </>
     ),
     date: "Aug 2017 - Aug 2021",
@@ -57,7 +57,8 @@ let timelineElements = [
     description: (
       <>
         <strong>Important Subjects Taken: </strong> Advance Data Science, Mobile Security, Information Retrival, 
-        Computer Vision, Machine Learning, Embedded ML, Mobile Security, Advance Data Structures & Algorithm
+        Computer Vision, Advance Machine Learning, Embedded ML, Mobile Security, Advance Data Structures & Algorithm, 
+        Deep Reinforcement Learning, Master's Thesis
       </>
     ),
     date: "Aug 2022 - Present",

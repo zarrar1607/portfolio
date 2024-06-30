@@ -7,7 +7,14 @@ import timelineElements from "./timelineElements"
 
 const Education = () => {
   const alignCenter = { display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh', scrollbarWidth: 'none!important' };
-
+  const purpleShades = [
+    '#3A006E', // Darkest shade
+    '#4C008A',
+    '#6400B6',
+    '#776FB7',
+    '#7E7FCC', 
+    '#858FE0', // Lightest shade
+  ];
   return (
     <div className={styles.container}>
       <div className={styles.background} />
@@ -15,10 +22,10 @@ const Education = () => {
       <Parallax pages={4}>
         <ParallaxLayer sticky={{ start: 0, end: 4 }} style={{ ...alignCenter, justifyContent: 'center' }}>
           <div className={`${styles.card} ${styles.sticky}`}>
-            <div className={`${styles.card_header} ${styles.title}`}>
+            <div className={`${styles.card_header} ${styles.title}`} style = {{background:purpleShades[0]}}>
               {timelineElements[3].title}
             </div>
-            <div className={`${styles.card_header}`}>
+            <div className={`${styles.card_header}`} style = {{background:purpleShades[0]}}>
               {timelineElements[3].company}
             </div>
 
@@ -38,10 +45,10 @@ const Education = () => {
 
         <ParallaxLayer sticky={{ start: 1, end: 4 }} style={{ ...alignCenter, justifyContent: 'center' }}>
           <div className={`${styles.card} ${styles.sticky}`}>
-            <div className={`${styles.card_header} ${styles.title}`}>
+            <div className={`${styles.card_header} ${styles.title}`}  style = {{background:purpleShades[1]}}>
               {timelineElements[2].title}
             </div>
-            <div className={`${styles.card_header}`}>
+            <div className={`${styles.card_header}`} style = {{background:purpleShades[1]}}>
               {timelineElements[2].company}
             </div>
             <div className={`${styles.card_content}`}>
@@ -60,10 +67,10 @@ const Education = () => {
 
         <ParallaxLayer sticky={{ start: 2, end: 4 }} style={{ ...alignCenter, justifyContent: 'center' }}>
           <div className={`${styles.card} ${styles.sticky}`}>
-            <div className={`${styles.card_header} ${styles.title}`}>
+            <div className={`${styles.card_header} ${styles.title}`} style = {{background:purpleShades[2]}}>
               {timelineElements[1].title}
             </div>
-            <div className={`${styles.card_header}`}>
+            <div className={`${styles.card_header}`} style = {{background:purpleShades[2]}}>
               {timelineElements[1].company}
             </div>
             <div className={`${styles.card_content}`}>
@@ -82,10 +89,10 @@ const Education = () => {
 
         <ParallaxLayer sticky={{ start: 3, end: 4 }} style={{ ...alignCenter, justifyContent: 'center' }}>
           <div className={`${styles.card} ${styles.sticky}`}>
-            <div className={`${styles.card_header} ${styles.title}`}>
+            <div className={`${styles.card_header} ${styles.title}`} style = {{background:purpleShades[3]}}>
               {timelineElements[0].title}
             </div>
-            <div className={`${styles.card_header}`}>
+            <div className={`${styles.card_header}`} style = {{background:purpleShades[3]}}>
               {timelineElements[0].company}
             </div>
             <div className={`${styles.card_content}`}>

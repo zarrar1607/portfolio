@@ -58,7 +58,7 @@
   width: 100%;
   text-align: center;
   z-index: 2;
-  background-color: #3A006E;
+  /* background-color: #3A006E; */
   color: white;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   font-family: 'Bruno Ace SC';

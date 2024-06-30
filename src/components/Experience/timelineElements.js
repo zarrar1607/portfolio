@@ -93,16 +93,18 @@ let timelineElements = [
     title: "Data Science & AI Intern",
     location: "Remote",
     description: (
-      <>
-        A 30-day internship of learning
+      <ul>
+        <li>A 30-day internship of learning
         Concepts: Data Aggregation, Visualization, Statistical Analysis.
-        using
-        <br />
-        Libraries: Pandas, Numpy, Matplotlib, Seaborn, and Sklearn, OpenCV, TensorFlow, MediaPipe, NLTK,
-        <br />
-        Tools: Tableau and Power -Bi, AWS, Azure,
+        using</li>
+        <li>
+          Libraries: Pandas, Numpy, Matplotlib, Seaborn, and Sklearn, OpenCV, TensorFlow, MediaPipe, NLTK,
+        </li>
+        <li>
+          Tools: Tableau and Power -Bi, AWS, Azure,
         and to apply the gained skills on industrial level projects.
-      </>
+        </li>
+      </ul>
     ),
     date: "Dec 2021 - Feb 2022",
     year: 2022,
@@ -113,11 +115,14 @@ let timelineElements = [
     title: "Web Developer Intern",
     location: "Remote",
     description: (
-      <>
-        Internship program in Web Development HTML and CSS:
-        <br />
-        Initially, the organizations taught the freshers, and after 2 weeks gave the assignment to complete.
-      </>
+      <ul>
+        <li>
+          Internship program in Web Development HTML and CSS:
+        </li>
+        <li>
+          Initially, the organizations taught the freshers, and after 2 weeks gave the assignment to complete.
+        </li>
+      </ul>
     ),
     date: "Sep 2020",
     year: 2020,

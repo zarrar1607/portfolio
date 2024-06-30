@@ -75,7 +75,7 @@ const Experience = () => {
           <div ref={(ref) => (timelineElementsRefs.current[index] = ref)} className="timeline-year">
             {element.year}
           </div>
-          <div key={element.id} className='timeline-item'>
+          <div key={element.id} className=''>
             <TimelineItem
               title={element.title}
               company = {element.company}

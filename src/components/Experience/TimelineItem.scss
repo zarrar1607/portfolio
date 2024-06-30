@@ -5,7 +5,9 @@
   justify-content: center;
   width: 100%;
   padding: 20px;
-  margin-left: 15px;
+  // margin-left: 15px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .display-1{
@@ -30,6 +32,9 @@
 
 /* Adjust font size for smaller screens (up to 576px) sm*/
 @media (max-width: 576px) {
+  .timeline-item{
+    padding-left: 60px;
+  }
   .timeline-item .content {
     font-size: 14px;
   }

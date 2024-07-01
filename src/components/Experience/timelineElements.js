@@ -1,30 +1,5 @@
 let timelineElements = [
   {
-    id: 7,
-    company: "The University of Kansas",
-    title: "Graduate Teaching Assistant (OS)",
-    location: "Kansas, United States",
-    description: (
-      <ul>
-        <li>
-          Facilitated 2 weekly lab sessions for EECS 673 - Operating Systems,
-          overseeing a class of 40 students.
-        </li>
-        <li>
-          Assisted <strong>Dr. Prasad Kulkarni</strong> in teaching, revising, and grading assignments
-          and exams.
-        </li>
-        <li>
-          Fostered an inclusive learning environment by leading group discussions,
-          tailoring individual support to each student's needs, and encouraging
-          participation in class activities.
-        </li>
-      </ul>
-    ),
-    date: "Aug 2023 - Present",
-    year: 2023,
-  },
-  {
     id: 6,
     company: "Rademacher Financial, Inc.",
     title: "Full-Stack Software Developer",
@@ -41,8 +16,8 @@ let timelineElements = [
           </ul>
         </>
       ),
-    date: "May 2023 - Aug 2023",
-    year: 2023,
+    date: "May 2023 - Aug 2024",
+    year: 2024,
   },
   {
     id: 5,
@@ -53,10 +28,10 @@ let timelineElements = [
       <ul>
         <li>
           Facilitated 2 weekly lab sessions for EECS 673 - Operating Systems,
-          overseeing a class of 40 students.
+          overseeing a class of 40 students each semester.
         </li>
         <li>
-          Assisted <strong>Dr. Heechul Yun</strong> in teaching, revising, and grading assignments
+          Assisted <strong>Dr. Prasad Kulkarni</strong> and <strong>Dr. Heeechul Yun</strong> in teaching, revising, and grading assignments
           and exams.
         </li>
         <li>
@@ -64,10 +39,16 @@ let timelineElements = [
           tailoring individual support to each student's needs, and encouraging
           participation in class activities.
         </li>
+        <li>
+          Created and enhancing the subject's website:<br></br>
+          <a href="https://zarrar1607.github.io/KUEECS678-Spring2024/" target="blank">
+            <button className="btn" style={{width:'auto', margin:'auto', marginTop:'10px', letterSpacing:'0px'}}>KU EECS678 Operating System Website - Spring2024</button>
+          </a>
+        </li>
       </ul>
     ),
-    date: "Jan 2023 - May 2023",
-    year: 2023,
+    date: "Jan 2023 - Apr 2024",
+    year: 2024,
   },
   {
     id: 4,

@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import TimelineItem from './TimeLineItem';
 import './Experience.scss';
 import timelineElements from "./timelineElements"
-
 import "react-vertical-timeline-component/style.min.css"
 
 const getColorClass = (id) => {
@@ -11,23 +10,24 @@ const getColorClass = (id) => {
     '#665299',
     '#6E5FA3',
     '#776FB7',
-    '#7E7FCC', 
+    '#7E7FCC',
     '#858FE0', // Lightest shade
   ];
-  const year =[
+  const year = [
+    2024,
     2023,
     2022,
     2021,
     2020,
   ]
   let i = 0;
-  for(i = 0; i<year.length; i++){
-    if(year[i] == id)
+  for (i = 0; i < year.length; i++) {
+    if (year[i] == id)
       return purpleShades[i];
   }
 };
-
 const Experience = () => {
+  // const { scrollYProgress } = useScroll();
   const timelineElementsRefs = useRef([]);
   const cubeRef = useRef(null);
 
@@ -65,30 +65,34 @@ const Experience = () => {
       <div ref={cubeRef} className="cube"></div>
 
       {timelineElements.map((element, index) => (
-        <div
-          className="timeline"
-          style={{
-            borderColor: getColorClass(element.year)
-          }}
-          key={element.id}
-        >
-          <div ref={(ref) => (timelineElementsRefs.current[index] = ref)} className="timeline-year">
-            {element.year}
+        
+          <div
+            className="timeline"
+            style={{
+              borderColor: getColorClass(element.year)
+            }}
+            key={element.id}
+          >
+            
+            <div ref={(ref) => (timelineElementsRefs.current[index] = ref)} className="timeline-year">
+              {element.year}
+            </div>
+            <div key={element.id} className=''>
+              <TimelineItem
+                id = {element.id}
+                title={element.title}
+                company={element.company}
+                location={element.location}
+                description={element.description}
+                date={element.date}
+                year={element.year}
+                color={getColorClass(element.year)}
+              />
+            </div>
           </div>
-          <div key={element.id} className=''>
-            <TimelineItem
-              title={element.title}
-              company = {element.company}
-              location={element.location}
-              description={element.description}
-              date={element.date}
-              year={element.year}
-              color={ getColorClass(element.year)}
-            />
-          </div>
-        </div>
       ))}
     </>
   );
 };
+
 export default Experience;

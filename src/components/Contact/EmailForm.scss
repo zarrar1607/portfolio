@@ -15,6 +15,18 @@
     border-color: #3A006E;
     color: #3A006E;
 }
+.btn.btn-github{
+    color: #1F2328;
+    border: 2px solid #1F2328;
+    background-color: white;
+    border-color: #1F2328;
+}
+.btn.btn-pdf{
+    color: #FF2600;
+    border: 2px solid #FF2600;
+    background-color: white;
+    border-color: #FF2600;
+}
 
 .btn:hover{
     background-color: #3A006E;
@@ -22,6 +34,19 @@
     border-color: #3A006E;
     box-shadow: 0px 0px 10px rgba(58, 0, 110, 0.8);
 }
+.btn.btn-github:hover{
+    background-color: #1F2328;
+    color: white;
+    border-color: #1F2328;
+    box-shadow: 0px 0px 10px #1F2328;
+}
+.btn.btn-pdf:hover{
+    background-color: #FF2600;
+    color: white;
+    border-color: #FF2600;
+    box-shadow: 0px 0px 10px #FF2600;
+}
+
 
 .btn:active{
     box-shadow: 0px 0px 20px rgba(58, 0, 110, 0.8);

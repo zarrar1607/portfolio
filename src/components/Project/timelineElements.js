@@ -410,7 +410,7 @@ let timelineElements = [
     skills: [
       'Embedded C',
       'Arduino',
-      'Java'
+      'Android Studios'
     ],
     description: (
       <>

@@ -53,10 +53,11 @@ const Home = () => {
                         <div className='flex-grow-1 border about_me_content'>
                             Hi! &#x1F44B; <br/>
                             Welcome to my portfolio!  &#x1F603; <br/>
-                            I'm a full-stack software developer with a passion for Artificial Intelligence and automation.  👨‍💻 <br/> <br/>
+                            I'm a full-stack software developer with a passion for Artificial Intelligence and Automation.  👨‍💻 <br/> 
+                            My research interests align closely with my hobbies in TinyML and Autonomous Racing 🏎️.<br/>
                             
                             Currently pursuing a master's in Computer Science, specializing in Data Science. 
-                            I enjoy expanding my knowledge and diving into unique projects such as autonomous robotics 🤖, builing web, destop, and mobile apps 💻. 
+                            I enjoy expanding my knowledge and diving into unique projects such as autonomous robotics 🤖, builing websites, destop, and mobile apps 💻. 
                             I'm also an enthusiastic participant in competitive coding challenges.<br/> <br/>
 
                             Feel free to explore my portfolio and get to know more about my work and experiences! 🚀

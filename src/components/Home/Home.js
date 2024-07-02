@@ -38,7 +38,9 @@ const Home = () => {
 
     return (
 
+        
         <div className='home'>
+            <div className='dummyHeight'></div>
             <Container className='jumbotron' fluid>
                 <Row className='align-items-center justify-content-center'>
                     <Col sm={12} md={6} xl={4} className='about_me_logo'>

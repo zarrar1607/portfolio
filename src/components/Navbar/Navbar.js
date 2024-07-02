@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './Navbar.scss';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -13,10 +13,14 @@ const Navigation = () => {
     setExpanded(!expanded);
   };
 
+  const closeNav = () => {
+    setExpanded(false);
+  };
+
   return (
     <Navbar expand="sm" expanded={expanded} className="nav-bar fixed-top" onToggle={toggleNav}>
       <Container className="nav-bar-container">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNav} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <NavLink
@@ -25,6 +29,7 @@ const Navigation = () => {
                 location.pathname === '/' ? 'nav-bar-active' : ''
               }`}
               to="/"
+              onClick={closeNav}
             >
               Home
             </NavLink>
@@ -35,6 +40,7 @@ const Navigation = () => {
                 location.pathname === '/experience' ? 'nav-bar-active' : ''
               }`}
               to="/experience"
+              onClick={closeNav}
             >
               Experience
             </NavLink>
@@ -45,6 +51,7 @@ const Navigation = () => {
                 location.pathname === '/project' ? 'nav-bar-active' : ''
               }`}
               to="/project"
+              onClick={closeNav}
             >
               Project
             </NavLink>
@@ -55,6 +62,7 @@ const Navigation = () => {
                 location.pathname === '/education' ? 'nav-bar-active' : ''
               }`}
               to="/education"
+              onClick={closeNav}
             >
               Education
             </NavLink>
@@ -65,6 +73,7 @@ const Navigation = () => {
                 location.pathname === '/contact' ? 'nav-bar-active' : ''
               }`}
               to="/contact"
+              onClick={closeNav}
             >
               Contact
             </NavLink>

@@ -74,7 +74,7 @@ export default function WordCloud(props) {
 
     const fixedValueGenerator = () => 0.5;
 
-    const colors = ['#3A006E', '#8C1A6A', 'rgba(58, 0, 110, 0.4)'];
+    const colors = ['rgba(58, 0, 110, 0.4)'];
 
     const [randomWordIndex, setRandomWordIndex] = useState(null);
 

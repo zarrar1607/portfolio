@@ -21,7 +21,7 @@
 .wordEffect:hover {
   font-size: 150%;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-  
+  fill: #3A006E;
 }
 
 /* Add the scale animation */
@@ -29,4 +29,5 @@
   transition: font-size 0.7s ease;
   font-size: 150%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  fill: #3A006E;
 }

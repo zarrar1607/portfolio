@@ -3,22 +3,32 @@ let timelineElements = [
     id: 18,
     project_title: "TinyLidarNet - End-to-End Network for F1tenth",
     //project_name: "f1tenth",
-    project_type: "Research Paper / Masters Thesis -Ongoing",
+    project_type: "Research Paper | Masters Thesis -Ongoing | F1tenth Competition",
     project_domain: [
       'IROS 2024',
       'Deep Learning',
+      'TinyML',
       'Robotics',
     ],
     date: "Feb 2023 - Oct 2024",
     year: 2024,
-    /*skills: [
+    skills: [
       'Python',
+      'C/C++',
       'ROS',
-      'C++',
-    ],*/
+      'TensorFlow',
+      'TFLite',
+      'Nvidia Jetson',
+    ],
     description: (
       <>
-        <img src={process.env.PUBLIC_URL + `/Coming Soon.webp`} alt={`Coming Soon`} style={{ height: '300px' }} />
+        Prior research has demonstrated the effectiveness of end-to-end deep learning for robotic navigation, where the control signals are directly derived
+        from raw sensory data. However, the majority of existing end-to-end navigation solutions are predominantly camera-based. In this paper, we introduce TinyLidarNet,
+        a lightweight 2D LiDAR-based end-to-end deep learning model for autonomous racing.
+        An F1TENTH vehicle using TinyLidarNet won 3rd place in the <a href="https://cps2023-race.f1tenth.org/" target="/blank"> 12th F1TENTH Autonomous Grand Prix competition</a>, demonstrating its competitive performance. We systematically
+        analyze its performance on untrained tracks and computing requirements for real-time processing. We find that TinyLidarNet's 1D Convolutional Neural Network (CNN) based
+        architecture significantly outperforms widely used Multi-Layer Perceptron (MLP) based architecture.
+        In addition, we show that it can be processed in real-time on low-end micro-controller units (MCUs).
       </>
     ),
   },
@@ -42,7 +52,12 @@ let timelineElements = [
     ],
     description: (
       <>
-        <img src={process.env.PUBLIC_URL + `/Coming Soon.webp`} alt={`Coming Soon`} style={{ height: '300px' }} />
+        To better showcase my projects and skills, I developed a personal portfolio website from scratch.
+        This project highlights my proficiency in front-end development and design.
+        <br />
+        <a href="https://github.com/zarrar1607/portfolio" target="_blank">
+          <button className="btn btn-github" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>GitHub</button>
+        </a>
       </>
     ),
   },
@@ -64,12 +79,14 @@ let timelineElements = [
     ],
     description: (
       <>
+        This project was a fun exercise in React development, timed with Valentine’s Day. The app offers a playful, interactive experience.
+        <br />
         <a href="https://zarrar1607.github.io/valentine-app/" target="_blank">
           <button className="btn" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>Website Link</button>
         </a>
-        <br/>
+        <br />
         <a href="https://github.com/zarrar1607/valentine-app" target="_blank">
-          <button className="btn" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>GitHub</button>
+          <button className="btn btn-github" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>GitHub</button>
         </a>
       </>
     ),
@@ -105,7 +122,7 @@ let timelineElements = [
         portals or company websites for further details and application submissions.
         <br />
         <a href="https://github.com/zarrar1607/EECS-767-Search-Engine/" target="_blank">
-          <button className="btn" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>GitHub</button>
+          <button className="btn btn-github" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>GitHub</button>
         </a>
       </>
     ),
@@ -188,16 +205,17 @@ let timelineElements = [
     ],
     description: (
       <>
-        <ul style={{ listStyle: 'None' }}>
+        Completed various projects during the course:
+        <ul style={{ display: 'flex', alignItems: 'flex-start', flexDirection: 'column' }}>
           <li>Sequence Prediction Sunspot Data.</li>
           <li>NLP on IMDB movie reviews data-set and sentiment detection on News data-set.</li>
           <li>Hand game, rock, paper, and scissor image classifier.</li>
           <li>Horse vs Human image classifier.</li>
           <li>Cat vs dogs image classifier.</li>
-          <lil>etc...</lil>
+          <li>etc...</li>
         </ul>
         <a href="https://github.com/zarrar1607/TensorFLow_Coursera/" target="_blank">
-          <button className="btn" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>GitHub</button>
+          <button className="btn btn-github" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>GitHub</button>
         </a>
       </>
     ),
@@ -223,7 +241,7 @@ let timelineElements = [
     description: (
       <>
         The goal of the project was to create a Lower Exoskeleton(for legs)
-        to aid aged people in walking and an Upper Exoskeleton(for hands) to help in
+        to aid aged people in walking and an Upper Exoskeleton(for hands) and help in
         picking heavy objects (usually required in industries).
         Built an ML model that requires muscle signals extracted from an EMG sensor
         that allows the prediction of human muscle movement patterns: The predicted
@@ -251,7 +269,7 @@ let timelineElements = [
     ],
     description: (
       <>
-        The goal was to make a 4 legged dog robot for
+        The goal was to build a 4 legged dog robot for
         the Robocon Competition 2019 - 2020.
         Programmed this robot to mimic the movements of a dog,
         horse, and spider. Its main function was to avoid obstacles
@@ -289,6 +307,10 @@ let timelineElements = [
         <a href="https://zarrar1607.github.io/Team-Robocon-MJCET-Website/" target="_blank">
           <button className="btn" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>TRM(Team Robocon MJCET) Website Template</button>
         </a>
+        <br />
+        <a href="https://github.com/zarrar1607/Team-Robocon-MJCET-Website" target="_blank">
+          <button className="btn btn-github" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>GitHub</button>
+        </a>
       </>
     ),
   },
@@ -305,13 +327,13 @@ let timelineElements = [
     year: 2020,
     skills: [
       'Embedded C',
-      'Robotics',
+      'Arduino',
     ],
     description: (
       <>
         Embedded an RFID reader inside a door, attached a LED strip around the reader
-        (for futuristic looks), covered them with a sheet, and also coupled the lock
-        with a servo motor. So, whenever a valid RFID card is brought in the range of
+        (for futuristic looks), covered them with a sheet, and attached a servo motor to
+        the lock. So, whenever a valid RFID card is brought in the range of
         the reader, the door would automatically unlock and vice versa.
         Implemented using Arduino and Hash Table structure, where the valid RFID Card
         numbers are stored.
@@ -341,10 +363,10 @@ let timelineElements = [
         TensorFlow API to detect emotions(angry, sad, surprised,
         and unknown) of characters (TOM & JERRY) in a video for participating
         in a competition at HackerEarth.
-        Implemented deep learning using the single-shot detector framework.
+        Implemented deep learning technique using the single-shot detector framework.
         <br />
         <a href="https://github.com/zarrar1607/Tom-Jerry-Emtion-Detector" target="_blank">
-          <button className="btn" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>GitHub</button>
+          <button className="btn btn-github" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>GitHub</button>
         </a>
       </>
     ),
@@ -366,11 +388,10 @@ let timelineElements = [
     ],
     description: (
       <>
-        Attached a photovoltaic ell to the headlights of a
-        car. Resultantly, anytime light from the opposite
-        automobile lands on this cell, the car's high beam light
-        switches to a low beam. This allows the motorist on the other side to
-        see clearly without any high bcam light reflections.
+        Designed headlights that switch from high beam to low beam automatically
+        when detecting light from an oncoming vehicle, improving road safety.
+        Attached a photovoltaic cell to the headlights of a
+        car.
       </>
     ),
   },
@@ -394,9 +415,9 @@ let timelineElements = [
     description: (
       <>
         Built an autonomous robot for an office environment that
-        throws garbage when filled. (Team Size: 4) and developed an
-        application using Android Studios to call ProDB at the client’s
-        place for collecting waste.
+        disposes garbage when filled and developed an
+        application using Android Studios to call ProDB at the employer's
+        sitting for collecting waste.
         Made ProDB capable of unloading the trash and going back to its
         permanent location, automatically.
       </>
@@ -420,7 +441,7 @@ let timelineElements = [
     ],
     description: (
       <>
-        Unique, extremely agile and compact designed of the attacker and goal keeper robot.
+        Built agile and compact robots for playing soccer, featuring an attacker and a goalkeeper.
       </>
     ),
   },
@@ -463,15 +484,18 @@ let timelineElements = [
     skills: [
       'JAVA',
       'JAVA Applets',
-      'SQL'
+      'SQL',
+      'Tensorflow',
     ],
     description: (
       <>
-        The project's main intention was directed towards helping the elderly who wish to perform Hajj in Saudi Arabia
-        but may encounter communication problems. Essentially, the person would wear a badge with a QR code that could
-        be scanned (using a java application). This would help access the person's medical history, including hospital
-        visitations, doctors consulted, medications prescribed, and contact details (all stored in the SQL database).
+        ExcerPD is an innovative application designed to assist users with exercising
+         at home. Utilizing advanced pose detection technology, the app provides 
+         real-time feedback and guidance to ensure proper exercise form and technique. 
+         This project was developed as part of the Microsoft Imagine Hack 2019, leveraging Java, 
+         Java Applets, and SQL for robust performance and user management.
       </>
+
     ),
   },
   {

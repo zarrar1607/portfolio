@@ -26,6 +26,9 @@ const Education = () => {
               {timelineElements[3].title}
             </div>
             <div className={`${styles.card_header}`} style = {{background:purpleShades[0]}}>
+              Specialize in Data Science
+            </div>
+            <div className={`${styles.card_header}`} style = {{background:purpleShades[0]}}>
               {timelineElements[3].company}
             </div>
 

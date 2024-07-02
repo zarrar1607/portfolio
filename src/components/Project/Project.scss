@@ -1,3 +1,4 @@
+
 .project .jumbotron {
     height: 100vh;
     display: flex;
@@ -14,4 +15,10 @@
 .project_images {
     width: 100%;
     background-color: rgb(10, 25, 41);
+}
+.project-card{
+  margin-bottom: 5%;
+  border: 10px solid black!important;
+  border-right: 0px !important;
+  border-left: 0px !important;
 }

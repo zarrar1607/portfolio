@@ -60,12 +60,12 @@ const TimelineItem = ({ id, title, company, location, description, date, year, c
         <div className="content">
           <p>{description}</p>
         </div>
-        <div className="scroll-progress">
+        {/* <div className="scroll-progress">
           ScrollYProgress: {scrollProgress.toFixed(2)},
           start: {start.toFixed(2)},
           end: {end.toFixed(2)},
           idx: {idx.toFixed(2)}
-        </div>
+        </div> */}
         </animated.div>
       </div>
     </div>

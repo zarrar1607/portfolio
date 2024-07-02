@@ -32,8 +32,15 @@
 }
  
 
-.linkText {
+.linkText a{
     //padding-left: 16px;
+    text-decoration: none;
+    color: #B2BAC2;
+}
+.linkText a:hover{
+    //padding-left: 16px;
+    text-decoration: none;
+    color: white;
 }
  
 .linkTextClosed {

@@ -27,9 +27,10 @@ const Project = () => {
             </div>
             {timelineElements.map((element, index) => (
                 <div
-                    className=""
+                    className="project-card"
                     style={{ border: 'none' }}
                     key={element.id}
+                    id={"project_" + element.id} 
                 >
                     <ProjectItem
                             id={element.id}

@@ -6,10 +6,12 @@ import ImageCarousel from './ProjectImageCarousel';
 
 const ProjectItem = ({id, project_title, project_type, project_domain, date, year, skills, description, image_path }) => {
   const getDomainColor = (domain) => {
-    if(domain == 'DeepLearning')
+    if(domain == 'Deep Learning' || domain == 'Natural Language Processing' || domain == 'Computer Vision')
         return '#1A6E37';
     else if(domain == 'Robotics')
         return '#333333';
+    else if(domain == 'IROS 2024')
+        return 'red';
     else{
       return '#0D2B74';
     }
@@ -67,7 +69,7 @@ const ProjectItem = ({id, project_title, project_type, project_domain, date, yea
         </div>
 
         <div className="content">
-          <strong>Skills Used: </strong>
+          <strong>Technology Used: </strong>
           <span className=''>{getSkillColor(skills)}</span>
         </div>
       </div>

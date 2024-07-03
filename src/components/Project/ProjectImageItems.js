@@ -12,6 +12,19 @@ const ProjectImageItems = [
   { projectname: "SARM", filename: 'opencv object localization.png', title: 'Opencv Object Localization', value: 40 },
   { projectname: "SARM", filename: 'prototype.png', title: 'Prototype', value: 40 },
   { projectname: "STUPA", filename: 'Stupa_UseCaseDiagram.png', title: 'Use Case Diagram', value: 40 },
+  { projectname: "STUPA", filename: 'studaverage.gif', title: 'Student Average', value: 40 },
+  { projectname: "STUPA", filename: 'studmarks.gif', title: 'Student Marks', value: 40 },
+  { projectname: "STUPA", filename: 'studrank.gif', title: 'Student Rank', value: 40 },
+  { projectname: "soccer_bot", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
+  { projectname: "ProDB", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
+  { projectname: "Cartoon_Emotions_Detector", videoUrl: 'https://www.youtube.com/embed/ftgs7JPIwMo?si=R5cEmQ3gHbdy1uI1', title: 'Teacher Side', value: 40 },
+  { projectname: "autonomous_door", videoUrl: 'https://youtube.com/shorts/V_rJiQAcWw0', title: 'Teacher Side', value: 40 },
+  { projectname: "TRM_Website", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
+  { projectname: "quad_robot", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
+  { projectname: "exo_skeleton", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
+  { projectname: "valentine_app", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
+  { projectname: "portfolio", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
+  { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
 ];
 // Sort the array first by project name and then by value
 ProjectImageItems.sort((a, b) => {

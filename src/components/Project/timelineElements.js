@@ -2,7 +2,7 @@ let timelineElements = [
   {
     id: 18,
     project_title: "TinyLidarNet - End-to-End Network for F1tenth",
-    //project_name: "f1tenth",
+    project_name: "TinyLidarNet",
     project_type: "Research Paper | Masters Thesis -Ongoing | F1tenth Competition",
     project_domain: [
       'IROS 2024',
@@ -36,6 +36,7 @@ let timelineElements = [
   {
     id: 17,
     project_title: "Portfolio",
+    project_name: "portfolio",
     project_type: "Fun",
     project_domain: [
       'Software Engineering',
@@ -65,6 +66,7 @@ let timelineElements = [
   {
     id: 16,
     project_title: "Valentine-App",
+    project_name: "valentine_app",
     project_type: "Fun",
     project_domain: [
       'Software Engineering',
@@ -344,7 +346,7 @@ let timelineElements = [
   {
     id: 7,
     project_title: "Cartoon Emotions Detector",
-    project_name: "HackerEarth",
+    project_name: "Cartoon_Emotions_Detector",
     project_type: "HackerEarth Competition",
     project_domain: [
       'Deep Learning',
@@ -467,6 +469,10 @@ let timelineElements = [
         Led the team, weekly meetings, and managed project goals.
         Moreover, Implemented OOPS concepts, flat files, hash tables, quick sort, error handling mechanisms,
         and graphics libraries for plotting graphs.
+        <br/>
+        <a href="https://github.com/zarrar1607/StuPa" target="_blank">
+          <button className="btn btn-github" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>GitHub</button>
+        </a>
       </>
     ),
   },

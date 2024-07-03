@@ -19,17 +19,17 @@ const ProjectImageItems = [
   { projectname: "ProDB", videoUrl: 'https://www.youtube.com/embed/kdjYZieqJ6M', title: 'Teacher Side', value: 40 },
   { projectname: "Cartoon_Emotions_Detector", videoUrl: 'https://www.youtube.com/embed/ftgs7JPIwMo?si=R5cEmQ3gHbdy1uI1', title: 'Teacher Side', value: 40 },
   { projectname: "autonomous_door", videoUrl: 'https://www.youtube.com/embed/V_rJiQAcWw0', title: 'Teacher Side', value: 40 },
-  //{ projectname: "TRM_Website", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
+  // { projectname: "TRM_Website", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
   { projectname: "quad_robot", videoUrl: 'https://www.youtube.com/embed/2ds8zvqoLZk?si=BV50xEVeX9Pwq75V', title: 'Teacher Side', value: 40 },
   { projectname: "quad_robot", videoUrl: 'https://www.youtube.com/embed/cK5_ypHg2hM?si=eQKXTiNad4M-OZ98', title: 'Teacher Side', value: 40 },
   { projectname: "quad_robot", videoUrl: 'https://www.youtube.com/embed/MbkoWbZQ4uE?si=peJ8zX3WUxDwmx2m', title: 'Teacher Side', value: 40 },
   { projectname: "quad_robot", filename: 'TRM_lab.jpg', title: 'Teacher Side', value: 40 },
   { projectname: "quad_robot", filename: 'TRM_tshirt.jpg', title: 'Teacher Side', value: 40 },
   { projectname: "quad_robot", filename: 'TRM_hoodie.jpg', title: 'Teacher Side', value: 40 },
-  { projectname: "exo_skeleton", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
-  { projectname: "valentine_app", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
-  { projectname: "portfolio", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
-  { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
+  // { projectname: "exo_skeleton", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
+  // { projectname: "valentine_app", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
+  // { projectname: "portfolio", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
+  // { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
 ];
 // Sort the array first by project name and then by value
 ProjectImageItems.sort((a, b) => {

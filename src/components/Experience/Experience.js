@@ -63,13 +63,13 @@ const Experience = () => {
   return (
     <>
       <div ref={cubeRef} className="cube"></div>
-
       {timelineElements.map((element, index) => (
         
           <div
             className="timeline"
             style={{
-              borderColor: getColorClass(element.year)
+              borderColor: getColorClass(element.year),
+              ...(element.id === timelineElements.length && { paddingTop: "20px" })
             }}
             key={element.id}
           >

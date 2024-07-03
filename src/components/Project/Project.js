@@ -1,26 +1,15 @@
 import React from 'react';
-import { useState, useEffect, useRef } from 'react';
 import ProjectItem from './ProjectItem';
 import timelineElements from "./timelineElements"
 import './Project.scss'
 import ImageCarousel from './ProjectImageCarousel';
 
 import SideNav from './SideNav.js';
-import Home from "../Home/Home.js";
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-} from "react-router-dom";
-import { Row, Image } from 'react-bootstrap';
 
 
 const Project = () => {
     return (
         <div className='project'>
-            {/*<div class='jumbotron' style={{justifyContent:'center', alignItems:'center'}}>
-                <Image src={ process.env.PUBLIC_URL +'/Under Construction.jpg'} alt='Under Construction' fluid></Image>
-            </div>*/}
             <SideNav />
             <div style = {{paddingTop:"100px"}}>
 

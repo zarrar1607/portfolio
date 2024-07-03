@@ -11,7 +11,7 @@ const ProjectImageItems = [
   { projectname: "SARM", filename: 'object masking.png', title: 'Object Masking', value: 40 },
   { projectname: "SARM", filename: 'opencv object localization.png', title: 'Opencv Object Localization', value: 40 },
   { projectname: "SARM", filename: 'prototype.png', title: 'Prototype', value: 40 },
-
+  { projectname: "STUPA", filename: 'Stupa_UseCaseDiagram.png', title: 'Use Case Diagram', value: 40 },
 ];
 // Sort the array first by project name and then by value
 ProjectImageItems.sort((a, b) => {

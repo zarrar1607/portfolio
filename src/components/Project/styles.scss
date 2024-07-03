@@ -1,0 +1,45 @@
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.horizontal_scroll_container {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  padding: 20px 40px;
+  margin-top: 60px;
+}
+
+.project_card {
+  flex-shrink: 0;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  margin-left: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+@media (max-width: 768px) {
+  .project_card {
+    // width: 250px; /* Adjust width for tablets */
+    // height: 150px; /* Adjust height for tablets */
+  }
+  .horizontal_scroll_container{
+
+  }
+}
+
+@media (max-width: 576px) {
+  .project_card {
+    width: 250px; /* Adjust width for tablets */
+    height: 150px; /* Adjust height for tablets */
+  }
+  .horizontal_scroll_container{
+
+  }
+}

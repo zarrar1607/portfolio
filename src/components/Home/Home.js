@@ -62,7 +62,7 @@ const Home = () => {
                                         My research interests align closely with my hobbies in TinyML and Autonomous Racing 🏎️.<br /> <br />
 
                                         Currently pursuing a <strong>Master's in Computer Science</strong>, specializing in Data Science at the <strong>University of Kansas</strong>.
-                                        I am interning as a <i>Software Developer</i> at <i>Rademacher Financial</i> for the Summer 2024 and <i>Research</i> under <i>Dr. Heechul Yun.</i> <br /> <br/>
+                                        I am interning as a <i>Software Developer</i> at <i>Rademacher Financial</i> for the Summer 2024 and working on <strong>TinyLidarNet (Research - IROS 2024)</strong> under <i>Dr. Heechul Yun.</i> <br /> <br/>
                                         I enjoy expanding my knowledge and diving into unique projects such as autonomous robotics 🤖, builing websites, destop, and mobile apps 💻.
                                         I'm also an enthusiastic participant in competitive coding challenges.<br /> <br />
 

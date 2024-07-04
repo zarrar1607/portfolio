@@ -59,6 +59,7 @@ const ProjectImageItems = [
 
   { projectname: "TinyLidarNet", filename: 'TLN_Jetson.jpg', title: 'TinyLidarNet with Jetson NX and Hokuyo', value: 40 },
   { projectname: "TinyLidarNet", filename: 'TLN_rplidar.jpg', title: 'TinyLidarNet with ESP32S3 and RPLidar A1', value: 40 },
+  { projectname: "TinyLidarNet", filename: '12th F1tenth Competition - 3rd Place.jpg', title: '12th F1tenth Competition - 3rd Place Certificate', value: 40 },
   { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/X6gY6nlsDwI?si=HS6Wr590HJfRxk1C', title: '12th F1tenth Competition', value: 40 },
   { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/9mVDuCfQdwI?si=CN7yLnVSjxXz-JrV', title: 'Self Driving Sharp Turns', value: 40 },
   { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/nKUF8EYLrYs', title: 'TinyLidarNet Speed Variations', value: 40 },

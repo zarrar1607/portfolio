@@ -1,5 +1,5 @@
 const ImageItems = [
-  { filename: 'F1tenth.jpg', title: 'F1Thenth 3rd Place', value: 45 },
+  { filename: '12th F1tenth Competition - 3rd Place.jpg', title: '12th F1tenth Competition - 3rd Place.jpg', value: 45 },
   { filename: 'DeepLearning.AI TensorFlow Developer.jpg', title: 'TensorFlow Developer Certification', value: 40 },
   { filename: 'Letter Of Appreciation(2019).jpg', title: 'Letter Of Appreciation (2019)', value: 40 },
   { filename: 'Letter Of Appreciation(2020).jpg', title: 'Letter Of Appreciation (2020)', value: 40 },

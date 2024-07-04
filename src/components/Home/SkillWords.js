@@ -42,7 +42,7 @@ const SkillWords = [
   { text: 'CUDA', value: 20 },
   { text: 'JIRA', value: 25 },
   { text: 'Docker', value: 25 },
-  { text: 'QT C++', value: 25 },
+  { text: 'QT', value: 25 },
   { text: 'Linux', value: 25 },
   { text: 'Node.js', value: 25 },
   { text: 'REST API', value: 25 },

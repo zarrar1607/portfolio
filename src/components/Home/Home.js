@@ -38,41 +38,55 @@ const Home = () => {
 
     return (
 
-        
+
         <div className='home'>
             <div className='dummyHeight'></div>
-            <Container className='jumbotron' fluid>
+            <Container className='' fluid>
                 <Row className='align-items-center justify-content-center'>
                     <Col sm={12} md={6} xl={4} className='about_me_logo'>
-                        <Image src={ process.env.PUBLIC_URL +'/ProfileImage/my_image.svg'} alt="My Profile" fluid/>
+                        <Image src={process.env.PUBLIC_URL + '/ProfileImage/my_image.svg'} alt="My Profile" fluid />
                     </Col>
-                    <Col sm={12} md={6} xl={8} className='about_me d-flex flex-column'>
-                        <h1 className='display-1 flex-shrink-0'>
-                            Mohammed Misbah Zarrar
-                        </h1>
-                        <div className='flex-grow-1 border about_me_content'>
-                            Hi! &#x1F44B; <br/>
-                            Welcome to my portfolio!  &#x1F603; <br/>
-                            I'm a full-stack software developer with a passion for Artificial Intelligence and Automation.  👨‍💻 <br/> 
-                            My research interests align closely with my hobbies in TinyML and Autonomous Racing 🏎️.<br/>
-                            
-                            Currently pursuing a master's in Computer Science, specializing in Data Science. 
-                            I enjoy expanding my knowledge and diving into unique projects such as autonomous robotics 🤖, builing websites, destop, and mobile apps 💻. 
-                            I'm also an enthusiastic participant in competitive coding challenges.<br/> <br/>
+                    <Col sm={12} md={6} xl={6} className='about_me d-flex flex-column'>
+                        <Row>
+                            <h1 className='display-1 flex-shrink-0'>
+                                Mohammed Misbah Zarrar
+                            </h1>
+                        </Row>
+                        <Row>
+                            <Col sm={12} md={12} xl={8}>
+                                <div className='flex-grow-1 border about_me_content'>
+                                    Hi! &#x1F44B; <br />
+                                    Welcome to my portfolio!  &#x1F603; <br />
+                                    I'm a full-stack software developer with a passion for Artificial Intelligence and Automation.  👨‍💻 <br />
+                                    My research interests align closely with my hobbies in TinyML and Autonomous Racing 🏎️.<br />
 
-                            Feel free to explore my portfolio and get to know more about my work and experiences! 🚀
-                        </div>
+                                    Currently pursuing a master's in Computer Science, specializing in Data Science.
+                                    I enjoy expanding my knowledge and diving into unique projects such as autonomous robotics 🤖, builing websites, destop, and mobile apps 💻.
+                                    I'm also an enthusiastic participant in competitive coding challenges.<br /> <br />
+
+                                    Feel free to explore my portfolio and get to know more about my work and experiences! 🚀
+                                </div>
+                            </Col>
+                            <Col sm={12} md={12} xl={4}>
+                                <div className='flex-grow-1 border about_me_content' style={{ display: 'flex', flexDirection: 'column', alignItems:'flex-start', height:'100%', marginTop:'10px'}}>
+                                    <strong>Currently:</strong> Master's Student at University of Kansas <br />
+                                    <strong>Summer Intership:</strong> Software Developer at Rademacher Financial<br />
+                                    <strong>Research:</strong> TinyML under Dr. Heechul Yun<br />
+                                </div>
+                            </Col>
+                        </Row>
+
                     </Col>
                 </Row>
             </Container>
 
-            <Container className='jumbotron skills' fluid>
+            <Container className=' skills' fluid>
                 <Row className='w-100 jumbotron_title'>
                     <Col>
                         <h1 className='display-3'>Skills{/*{parentSize.width - 5} x {parentSize.height - 15}*/}</h1>
                     </Col>
                 </Row>
-                <Row className='w-100 flex-grow-1 about_me_content mb-3' style={{ maxHeight: '100%', maxWidth: '100%', marginLeft:'0px', marginRight:'0px' }}>
+                <Row className='w-100 flex-grow-1 about_me_content mb-3' style={{ maxHeight: '100%', maxWidth: '100%', marginLeft: '0px', marginRight: '0px' }}>
                     <Col style={{ padding: 0, border: 0 }} ref={impCol}>
                         <WordCloud words={words} finalWidth={parentSize.width - 5} finalHeight={parentSize.height * 0.85} />
                     </Col>
@@ -85,7 +99,7 @@ const Home = () => {
                         <h1 className='display-3'>Certs</h1>
                     </Col>
                 </Row>
-                <Row className='w-100 h-100 about_me_content ' style={{ marginLeft:'0px', marginRight:'0px', marginBottom:'5px' }} >
+                <Row className='w-100 h-100 about_me_content ' style={{ marginLeft: '0px', marginRight: '0px', marginBottom: '5px' }} >
                     <ImageCarousel />
                 </Row>
             </Container>

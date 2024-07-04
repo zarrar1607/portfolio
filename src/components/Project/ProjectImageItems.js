@@ -23,14 +23,31 @@ const ProjectImageItems = [
   { projectname: "quad_robot", videoUrl: 'https://www.youtube.com/embed/2ds8zvqoLZk?si=BV50xEVeX9Pwq75V', title: 'Teacher Side', value: 40 },
   { projectname: "quad_robot", videoUrl: 'https://www.youtube.com/embed/cK5_ypHg2hM?si=eQKXTiNad4M-OZ98', title: 'Teacher Side', value: 40 },
   { projectname: "quad_robot", videoUrl: 'https://www.youtube.com/embed/MbkoWbZQ4uE?si=peJ8zX3WUxDwmx2m', title: 'Teacher Side', value: 40 },
+  { projectname: "quad_robot", filename: 'quad_robot_spider_gait.JPG', title: 'Teacher Side', value: 40 },
+  { projectname: "quad_robot", filename: 'quad_robot_dog_gait.JPG', title: 'Teacher Side', value: 40 },
   { projectname: "quad_robot", filename: 'TRM_lab.jpg', title: 'Teacher Side', value: 40 },
   { projectname: "quad_robot", filename: 'TRM_tshirt.jpg', title: 'Teacher Side', value: 40 },
   { projectname: "quad_robot", filename: 'TRM_hoodie.jpg', title: 'Teacher Side', value: 40 },
+  { projectname: "quad_robot", filename: 'trm_group.JPG', title: 'Teacher Side', value: 40 },
   // { projectname: "exo_skeleton", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
-  // { projectname: "valentine_app", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
-  // { projectname: "portfolio", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
-  // { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/yfemA2Xahgg?si=lPL2AmU_6fYEbyCo', title: 'Teacher Side', value: 40 },
+  { projectname: "valentine_app", filename: 'valentine.png', title: 'Teacher Side', value: 40 },
+  { projectname: "portfolio", filename: 'Portfolio_Figma_High_Fidility_Components.png', title: 'Portfolio_Figma_High_Fidility_Components', value: 'Portfolio_Figma_High_Fidility_Components' },
+  { projectname: "portfolio", filename: 'Portfolio_Figma_High_Fidility.png', title: 'Portfolio_Figma_High_Fidility', value: 'Portfolio_Figma_High_Fidility' },
+  { projectname: "portfolio", filename: 'Portfolio_Figma_low_Fidility.png', title: 'Portfolio_Figma_low_Fidility', value: 40 },
+  { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/9mVDuCfQdwI?si=CN7yLnVSjxXz-JrV', title: 'Self Driving Sharp turns', value: 40 },
+  { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/nKUF8EYLrYs', title: 'TinyLidarNet speed Variations', value: 40 },
+  { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/X6gY6nlsDwI?si=HS6Wr590HJfRxk1C', title: 'comeptition', value: 40 },
+  { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/z7PXQDyIU5g?si=4U8KlytpCKvlcuKw', title: 'Onstacle avoidance TLN', value: 40 },
+  { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/5CuAcuYpDYM?si=dWR_41G-Zi1aqDr7', title: 'TinyLidarNet on ESP32S3 + RpLidar A1', value: 40 },
+  { projectname: "TinyLidarNet", filename: 'TLN_Jetson.jpg', title: 'TLN_Jetson', value: 40 },
+  { projectname: "TinyLidarNet", filename: 'TLN_rplidar.jpg', title: 'TLN_rplidar', value: 40 },
+
+
+  
+  
 ];
+
+
 // Sort the array first by project name and then by value
 ProjectImageItems.sort((a, b) => {
   // Compare project names first

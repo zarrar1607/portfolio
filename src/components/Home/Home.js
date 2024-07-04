@@ -55,16 +55,20 @@ const Home = () => {
                         <Row>
                             <Col sm={12} md={12} xl={12}>
                                 <div className='flex-grow-1 border about_me_content'>
-                                    Hi! &#x1F44B; <br />
-                                    Welcome to my portfolio!  &#x1F603; <br />
-                                    I'm a full-stack software developer with a passion for Artificial Intelligence and Automation.  👨‍💻 <br />
-                                    My research interests align closely with my hobbies in TinyML and Autonomous Racing 🏎️.<br /> <br />
+                                    <p>
+                                        Hi! &#x1F44B; <br />
+                                        Welcome to my portfolio!  &#x1F603; <br />
+                                        I'm a full-stack software developer with a passion for Artificial Intelligence and Automation.  👨‍💻 <br />
+                                        My research interests align closely with my hobbies in TinyML and Autonomous Racing 🏎️.<br /> <br />
 
-                                    Currently pursuing a Master's in Computer Science, specializing in Data Science at the University of Kansas.
-                                    I enjoy expanding my knowledge and diving into unique projects such as autonomous robotics 🤖, builing websites, destop, and mobile apps 💻.
-                                    I'm also an enthusiastic participant in competitive coding challenges.<br /> <br />
+                                        Currently pursuing a <strong>Master's in Computer Science</strong>, specializing in Data Science at the <strong>University of Kansas</strong>.
+                                        I am interning as a <i>Software Developer</i> at <i>Rademacher Financial</i> for the Summer 2024 and <i>Research</i> under <i>Dr. Heechul Yun.</i> <br />
+                                        I enjoy expanding my knowledge and diving into unique projects such as autonomous robotics 🤖, builing websites, destop, and mobile apps 💻.
+                                        I'm also an enthusiastic participant in competitive coding challenges.<br /> <br />
 
-                                    Feel free to explore my portfolio and get to know more about my work and experiences! 🚀
+                                        Feel free to explore my portfolio and get to know more about my work and experiences! 🚀
+
+                                    </p>
                                 </div>
                             </Col>
                             {/* <Col sm={12} md={12} xl={4}>

@@ -53,27 +53,27 @@ const Home = () => {
                             </h1>
                         </Row>
                         <Row>
-                            <Col sm={12} md={12} xl={8}>
+                            <Col sm={12} md={12} xl={12}>
                                 <div className='flex-grow-1 border about_me_content'>
                                     Hi! &#x1F44B; <br />
                                     Welcome to my portfolio!  &#x1F603; <br />
                                     I'm a full-stack software developer with a passion for Artificial Intelligence and Automation.  👨‍💻 <br />
-                                    My research interests align closely with my hobbies in TinyML and Autonomous Racing 🏎️.<br />
+                                    My research interests align closely with my hobbies in TinyML and Autonomous Racing 🏎️.<br /> <br />
 
-                                    Currently pursuing a master's in Computer Science, specializing in Data Science.
+                                    Currently pursuing a Master's in Computer Science, specializing in Data Science at the University of Kansas.
                                     I enjoy expanding my knowledge and diving into unique projects such as autonomous robotics 🤖, builing websites, destop, and mobile apps 💻.
                                     I'm also an enthusiastic participant in competitive coding challenges.<br /> <br />
 
                                     Feel free to explore my portfolio and get to know more about my work and experiences! 🚀
                                 </div>
                             </Col>
-                            <Col sm={12} md={12} xl={4}>
+                            {/* <Col sm={12} md={12} xl={4}>
                                 <div className='flex-grow-1 border about_me_content' style={{ display: 'flex', flexDirection: 'column', alignItems:'flex-start', height:'100%', marginTop:'10px'}}>
                                     <strong>Currently:</strong> Master's Student at University of Kansas <br />
                                     <strong>Summer Intership:</strong> Software Developer at Rademacher Financial<br />
                                     <strong>Research:</strong> TinyML under Dr. Heechul Yun<br />
                                 </div>
-                            </Col>
+                            </Col> */}
                         </Row>
 
                     </Col>

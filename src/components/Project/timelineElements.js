@@ -29,6 +29,14 @@ let timelineElements = [
         analyze its performance on untrained tracks and computing requirements for real-time processing. We find that TinyLidarNet's 1D Convolutional Neural Network (CNN) based
         architecture significantly outperforms widely used Multi-Layer Perceptron (MLP) based architecture.
         In addition, we show that it can be processed in real-time on low-end micro-controller units (MCUs).
+        <br/>
+        <a href="https://github.com/zarrar1607/TinyLidarNet" target="_blank">
+          <button className="btn btn-github" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>GitHub</button>
+        </a>
+        <span style={{padding:"20px"}}></span>
+        <a href="#" target="_blank">
+          <button className="btn btn-pdf" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>Paper</button>
+        </a>
       </>
     ),
   },

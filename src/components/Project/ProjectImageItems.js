@@ -37,6 +37,7 @@ const ProjectImageItems = [
   { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/9mVDuCfQdwI?si=CN7yLnVSjxXz-JrV', title: 'Self Driving Sharp turns', value: 40 },
   { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/nKUF8EYLrYs', title: 'TinyLidarNet speed Variations', value: 40 },
   { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/X6gY6nlsDwI?si=HS6Wr590HJfRxk1C', title: 'comeptition', value: 40 },
+  { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/0puSE9Bu-tY?si=GzmxzosQjre8V9BZ', title: 'TinyLidarNet on unseen track', value: 40 },
   { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/z7PXQDyIU5g?si=4U8KlytpCKvlcuKw', title: 'Onstacle avoidance TLN', value: 40 },
   { projectname: "TinyLidarNet", videoUrl: 'https://www.youtube.com/embed/5CuAcuYpDYM?si=dWR_41G-Zi1aqDr7', title: 'TinyLidarNet on ESP32S3 + RpLidar A1', value: 40 },
   { projectname: "TinyLidarNet", filename: 'TLN_Jetson.jpg', title: 'TLN_Jetson', value: 40 },

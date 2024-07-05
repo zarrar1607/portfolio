@@ -12,6 +12,7 @@ root.render(
   </React.StrictMode>
 );*/
 import { BrowserRouter, HashRouter } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop'; // Import ScrollToTop component
 
 /*ReactDOM.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -23,6 +24,7 @@ import { BrowserRouter, HashRouter } from 'react-router-dom';
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter>
+    <ScrollToTop /> {/* Add ScrollToTop component */}
       <App />
     </HashRouter>
   </React.StrictMode>,

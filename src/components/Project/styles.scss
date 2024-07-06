@@ -1,7 +1,13 @@
 /* Existing styles */
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 1px; /* Adjust width as needed */
+  height: 5px; /* Adjust height for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5b65ad; /* Set scrollbar color to white */
+  border-radius: 5px; /* Add rounded corners */
 }
 
 .horizontal_scroll_container {

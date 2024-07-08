@@ -63,7 +63,7 @@ const Home = () => {
 
                                         Currently pursuing a <strong>Master's in Computer Science</strong>, specializing in Data Science at the <strong>University of Kansas</strong>.
                                         I am interning as a <i>Software Developer</i> at <i>Rademacher Financial</i> for the Summer 2024 and working on <strong>TinyLidarNet (Research - IROS 2024)</strong> under <i>Dr. Heechul Yun.</i> <br /> <br/>
-                                        I enjoy expanding my knowledge and diving into unique projects such as autonomous robotics 🤖, builing websites, destop, and mobile apps 💻.
+                                        I enjoy expanding my knowledge and diving into unique projects such as autonomous robotics 🤖, building websites, destop, and mobile apps 💻.
                                         I'm also an enthusiastic participant in competitive coding challenges.<br /> <br />
 
                                         Feel free to explore my portfolio and get to know more about my work and experiences! 🚀

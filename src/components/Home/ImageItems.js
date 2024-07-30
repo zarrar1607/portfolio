@@ -1,5 +1,6 @@
 const ImageItems = [
-  { filename: '12th F1tenth Competition - 3rd Place.jpg', title: '12th F1tenth Competition - 3rd Place.jpg', value: 45 },
+  { filename: 'KU_Data_Science_Certificate.jpg', title: 'KU Data Science Graduate Certificate', value: 46 },
+  { filename: '12th F1tenth Competition - 3rd Place.jpg', title: '12th F1tenth Competition - 3rd Place', value: 45 },
   { filename: 'DeepLearning.AI TensorFlow Developer.jpg', title: 'TensorFlow Developer Certification', value: 40 },
   { filename: 'Letter Of Appreciation(2019).jpg', title: 'Letter Of Appreciation (2019)', value: 40 },
   { filename: 'Letter Of Appreciation(2020).jpg', title: 'Letter Of Appreciation (2020)', value: 40 },

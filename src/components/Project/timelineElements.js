@@ -160,7 +160,11 @@ let timelineElements = [
         brightness, and selectively retraining key model layers on the device. Implemented "<a href='https://arxiv.org/pdf/2206.15472.pdf'>On-Device Training Under 256KB Memory</a>"
         paper, leveraging DAVE Architecture and TFLite API, to meet stringent time and space limitations.
         Aiming to balance memory management and inference accuracy, this project showcases my expertise in
-        adapting deep learning models for real-world edge computing applications."
+        adapting deep learning models for real-world edge computing applications.
+        <br/>
+        <a href="/portfolio/Project/DeepPiCar_Fine Tuning_Report_Adhoc.pdf" target="_blank">
+          <button className="btn btn-pdf" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>Report</button>
+        </a>
       </>
     ),
   },

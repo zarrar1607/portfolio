@@ -1,0 +1,42 @@
+// src/components/Resume/Resume.scss
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    padding: 20px; /* Add padding around the container */
+    min-height: 100vh; /* Ensure it takes at least full viewport height */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .resume-card {
+    cursor: pointer;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff; /* Use white for better contrast */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for a 3D effect */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transform for hover effect */
+    width: 250px; /* Fixed width */
+    text-align: center; /* Center text inside card */
+    position: relative; /* Position for absolute elements */
+  }
+  
+//   .resume-card:hover {
+//     background-color: #f0f0f0; /* Subtle hover effect */
+//     transform: translateY(-5px); /* Lift effect on hover */
+//   }
+  
+  .resume-card h3 {
+    margin: 0 0 10px; /* Space below title */
+    font-size: 1.5rem; /* Larger font size for title */
+    color: #333; /* Darker text color */
+  }
+  
+  .resume-card p {
+    margin: 0; /* Reset margin for paragraph */
+    color: #666; /* Softer text color for description */
+    font-size: 1rem; /* Font size for description */
+  }
+  

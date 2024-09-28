@@ -1,26 +1,7 @@
 let timelineElements = [
+ 
   {
     id: 6,
-    company: "Rademacher Financial, Inc.",
-    title: "Full-Stack Software Developer",
-    location: "Kansas, United States",
-    description:
-      (
-        <>
-          <ul>
-            <li>Gained hands-on experience in C++ and the Qt framework, specializing in coding, debugging, and optimizing software in a trading/financial company.</li>
-            <li>Designed user-friendly interfaces using the QT UI Manager, enhancing the overall user experience.</li>
-            <li>Improved software efficiency by 75% through backend file import optimizations, utilizing QThreads and data processing techniques.</li>
-            <li>Acquired proficiency in both front-end and back-end development tasks, contributing to a well-rounded skill set for software development roles.</li>
-            <li>Successfully transformed backend processes from asynchronous to synchronous, eliminating delays in communication between modules thereby enhancing system efficiency, no loss of signals, and ensuring seamless data flow within the application.</li>
-          </ul>
-        </>
-      ),
-    date: "May 2023 - Aug 2024",
-    year: 2024,
-  },
-  {
-    id: 5,
     company: "The University of Kansas",
     title: "Graduate Teaching Assistant (OS)",
     location: "Kansas, United States",
@@ -47,7 +28,32 @@ let timelineElements = [
         </li>
       </ul>
     ),
-    date: "Jan 2023 - Apr 2024",
+    date: "Jan 2023 - Dec 2024",
+    year: 2024,
+  },
+  {
+    id: 5,
+    company: "Rademacher Financial, Inc.",
+    title: "Full-Stack Software Developer",
+    location: "Kansas, United States",
+    description:
+      (
+        <>
+          <ul>
+            <li>Gained hands-on experience in C++ and the Qt framework, specializing in coding, debugging, and optimizing software in a trading/financial company.</li>
+            <li>Designed user-friendly interfaces using the QT UI Manager, enhancing the overall user experience.</li>
+            <li>Improved software efficiency by 75% through backend file import optimizations, utilizing QThreads and data processing techniques.</li>
+            <li>Acquired proficiency in both front-end and back-end development tasks, contributing to a well-rounded skill set for software development roles.</li>
+            <li>Successfully transformed backend processes from asynchronous to synchronous, eliminating delays in communication between modules thereby enhancing system efficiency, no loss of signals, and ensuring seamless data flow within the application.</li>
+            <li>Improved PostgreSQL performance by implementing data partitioning and indexing, reducing data fetching times by 50% and enhancing retrieval for 1,000+ accounts, improving processing efficiency by 30%.</li>
+            <li>Automated fee schedule calculations and quarterly updates for 15,000+ holdings, streamlining client financial operations and significantly reducing manual effort.</li>
+            <li>Designed responsive, real-time validating UIs with optimized SQL query models, cutting UI load times from 20 to 0.2 seconds and elevating user experience for Billing Reviews that in-house financial advisors use.</li>
+            <li>Verified financial trading algorithms (CRS, RSI) using automated Excel tools, improving accuracy and supporting more informed trade decisions for advisors.</li>
+
+          </ul>
+        </>
+      ),
+    date: "May 2023 - Aug 2024",
     year: 2024,
   },
   {

@@ -23,15 +23,17 @@
     position: relative; /* Position for absolute elements */
   }
   
-//   .resume-card:hover {
-//     background-color: #f0f0f0; /* Subtle hover effect */
-//     transform: translateY(-5px); /* Lift effect on hover */
-//   }
+  .resume-card:hover {
+    background-color: #f0f0f0; /* Subtle hover effect */
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
   
   .resume-card h3 {
     margin: 0 0 10px; /* Space below title */
     font-size: 1.5rem; /* Larger font size for title */
     color: #333; /* Darker text color */
+    font-family: 'Bruno Ace SC';
+    color: #3A006E;
   }
   
   .resume-card p {

@@ -7,6 +7,7 @@ import Contact from './components/Contact/Contact';
 import Experience from './components/Experience/Experience';
 import Project from './components/Project/Project';
 import Education from './components/Education/Education';
+import Resume from './components/Resume/Resume';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/project" element={<Project />} />
           <Route path="/education" element={<Education />} />
+          <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>

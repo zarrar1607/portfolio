@@ -77,6 +77,17 @@ const Navigation = () => {
             >
               Contact
             </NavLink>
+
+            <NavLink
+              exact
+              className={`nav-bar-button ${
+                location.pathname === '/resume' ? 'nav-bar-active' : ''
+              }`}
+              to="/resume"
+              onClick={closeNav}
+            >
+              Resume
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,5 +1,3 @@
-// src/components/Resume/Resume.scss
-
 .resume-container {
     display: flex;
     justify-content: center;
@@ -8,9 +6,9 @@
     padding: 20px; /* Add padding around the container */
     min-height: 100vh; /* Ensure it takes at least full viewport height */
     align-items: center; /* Center items vertically */
-  }
-  
-  .resume-card {
+}
+
+.resume-card {
     cursor: pointer;
     padding: 20px;
     border: 1px solid #ccc;
@@ -21,24 +19,58 @@
     width: 250px; /* Fixed width */
     text-align: center; /* Center text inside card */
     position: relative; /* Position for absolute elements */
-  }
-  
-  .resume-card:hover {
+}
+
+.resume-card:hover {
     background-color: #f0f0f0; /* Subtle hover effect */
     transform: translateY(-5px); /* Lift effect on hover */
-  }
-  
-  .resume-card h3 {
+}
+
+.resume-card h3 {
     margin: 0 0 10px; /* Space below title */
     font-size: 1.5rem; /* Larger font size for title */
     color: #333; /* Darker text color */
     font-family: 'Bruno Ace SC';
     color: #3A006E;
-  }
-  
-  .resume-card p {
+}
+
+.resume-card p {
     margin: 0; /* Reset margin for paragraph */
     color: #666; /* Softer text color for description */
     font-size: 1rem; /* Font size for description */
-  }
-  
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .resume-card {
+        width: 90%; /* Adjust card width for mobile */
+        max-width: 350px; /* Set a maximum width */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .resume-card h3 {
+        font-size: 1.2rem; /* Adjust title font size */
+    }
+
+    .resume-card p {
+        font-size: 0.9rem; /* Adjust description font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-container {
+        padding: 10px; /* Reduce container padding */
+    }
+
+    .resume-card {
+        width: 100%; /* Full width on very small screens */
+    }
+
+    .resume-card h3 {
+        font-size: 1.1rem; /* Further reduce title font size */
+    }
+
+    .resume-card p {
+        font-size: 0.8rem; /* Further reduce description font size */
+    }
+}

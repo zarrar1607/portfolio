@@ -104,8 +104,10 @@ const OverlayBackground = styled(Dialog.Overlay, {
 
 const Content = styled(Dialog.Content, {
     position: 'absolute',
-    width: '50vw',
-    height: '60vh',
+    width: '90vw', // Make width responsive
+    height: '80vh', // Increase height for better visibility
+    maxWidth: '600px', // Maximum width for larger screens
+    maxHeight: '90vh', // Maximum height for larger screens
     backgroundColor: '#fafafa',
     borderRadius: 8,
     padding: '24px',
@@ -113,6 +115,7 @@ const Content = styled(Dialog.Content, {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)', // Add a shadow for depth
 });
 
 const DialogHeader = styled('header', {

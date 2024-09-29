@@ -62,7 +62,7 @@ const Home = () => {
                                         My research interests align closely with my hobbies in TinyML and Autonomous Racing 🏎️.<br /> <br />
 
                                         Currently pursuing a <strong>Master's in Computer Science</strong>, specializing in Data Science at the <strong>University of Kansas</strong>.
-                                        I am a Graduate Teacing Assitant for <i>Operating Systems</i> at <i>University of Kansas</i> and working on <strong>TinyLidarNet (Research - IROS 2024)</strong> under <i>Dr. Heechul Yun.</i> <br /> <br/>
+                                        I am a Graduate Teaching Assistant for <i>Operating Systems</i> at <i>University of Kansas</i> and working on <strong>TinyLidarNet (Research - IROS 2024)</strong> under <i>Dr. Heechul Yun.</i> <br /> <br/>
                                         I enjoy expanding my knowledge and diving into unique projects such as autonomous robotics 🤖, building websites, desktop, and mobile apps 💻.
                                         I'm also an enthusiastic participant in competitive coding challenges.<br /> <br />
 

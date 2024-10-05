@@ -25,16 +25,16 @@ let timelineElements = [
         Prior research has demonstrated the effectiveness of end-to-end deep learning for robotic navigation, where the control signals are directly derived
         from raw sensory data. However, the majority of existing end-to-end navigation solutions are predominantly camera-based. In this paper, we introduce TinyLidarNet,
         a lightweight 2D LiDAR-based end-to-end deep learning model for autonomous racing.
-        An F1TENTH vehicle using TinyLidarNet won 3rd place in the <a href="https://cps2023-race.f1tenth.org/" target="/blank"> 12th F1TENTH Autonomous Grand Prix competition</a>, demonstrating its competitive performance. We systematically
+        An F1TENTH vehicle using TinyLidarNet won 3rd place in the <a href="https://cps2023-race.f1tenth.org/" target="/blank"> 12th F1TENTH Autonomous Grand Prix competition</a> among 13 Teams, demonstrating its competitive performance. We systematically
         analyze its performance on untrained tracks and computing requirements for real-time processing. We find that TinyLidarNet's 1D Convolutional Neural Network (CNN) based
         architecture significantly outperforms widely used Multi-Layer Perceptron (MLP) based architecture.
         In addition, we show that it can be processed in real-time on low-end micro-controller units (MCUs).
         <br/>
-        <a href="https://github.com/zarrar1607/TinyLidarNet" target="_blank">
+        <a href="https://github.com/CSL-KU/TinyLidarNet" target="_blank">
           <button className="btn btn-github" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>GitHub</button>
         </a>
         <span style={{padding:"20px"}}></span>
-        <a href="#" target="_blank">
+        <a href="https://www.ittc.ku.edu/~heechul/papers/tiny-iros2024-camera.pdf" target="_blank">
           <button className="btn btn-pdf" style={{ width: 'auto', margin: 'auto', marginTop: '10px', letterSpacing: '0px' }}>Paper</button>
         </a>
       </>

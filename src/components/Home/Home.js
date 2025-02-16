@@ -58,15 +58,16 @@ const Home = () => {
                                     <p>
                                         Hi! &#x1F44B; <br />
                                         Welcome to my portfolio!  &#x1F603; <br />
-                                        I'm a full-stack software developer with a passion for Artificial Intelligence and Automation.  👨‍💻 <br />
-                                        My research interests align closely with my hobbies in TinyML and Autonomous Racing 🏎️.<br /> <br />
+                                        I'm a <strong>full-stack software developer</strong> with a passion for <strong>Artificial Intelligence(AI) and Automation</strong>. 👨‍💻 <br />
+                                        My research interests align closely with my hobbies, which include
+                                        <strong>developing efficient AI models (TinyML) for robots and creating high-performance software</strong> 🏎️. <br /><br />
 
-                                        Currently pursuing a <strong>Master's in Computer Science</strong>, specializing in Data Science at the <strong>University of Kansas</strong>.
-                                        I am a Graduate Teaching Assistant for <i>Operating Systems</i> at <i>University of Kansas</i> and working on <strong>TinyLidarNet (Research - IROS 2024)</strong> under <i>Dr. Heechul Yun.</i> <br /> <br/>
-                                        I enjoy expanding my knowledge and diving into unique projects such as autonomous robotics 🤖, building websites, desktop, and mobile apps 💻.
-                                        I'm also an enthusiastic participant in competitive coding challenges.<br /> <br />
+                                        Currently, I work as a <strong>Software Machine Learning Engineer</strong> at <strong>Pinnacle Technology</strong>.
+                                        I hold a <strong>Master’s in Computer Science</strong>, specializing in <strong>Data Science</strong>, from the <strong>University of Kansas</strong>.
+                                        I proudly presented <strong>TinyLidarNet</strong> at <strong>IROS 2024</strong>, a leading conference in robotics! 🚀<br />
+                                        Beyond work and research, I enjoy <strong>playing table tennis</strong> 🏓, <strong>practicing Taekwondo</strong> 🥋, and <strong>traveling</strong> 🌍<br /> <br />
 
-                                        Feel free to explore my portfolio and get to know more about my work and experiences! 🚀
+                                        Feel free to explore my portfolio and get to know more about my work and experiences! ✨
 
                                     </p>
                                 </div>

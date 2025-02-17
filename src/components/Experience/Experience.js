@@ -1,10 +1,10 @@
+// Experience.js
 import React, { useRef, useEffect } from 'react';
 import TimelineItem from './TimeLineItem';
 import './Experience.scss';
-import timelineElements from "./timelineElements"
-import "react-vertical-timeline-component/style.min.css"
+import timelineElements from "./timelineElements";
 
-const getColorClass = (id) => {
+const getColorClass = (year) => {
   const purpleShades = [
     '#3A006E', // Darkest shade
     '#665299',
@@ -13,84 +13,70 @@ const getColorClass = (id) => {
     '#7E7FCC',
     '#858FE0', // Lightest shade
   ];
-  const year = [
-    2024,
-    2023,
-    2022,
-    2021,
-    2020,
-  ]
-  let i = 0;
-  for (i = 0; i < year.length; i++) {
-    if (year[i] == id)
+  const years = [2024, 2023, 2022, 2021, 2020];
+
+  for (let i = 0; i < years.length; i++) {
+    if (years[i] === year) {
       return purpleShades[i];
+    }
   }
-  return '#858FE0'; //default
+  return '#858FE0'; // Default color
 };
+
 const Experience = () => {
-  // const { scrollYProgress } = useScroll();
   const timelineElementsRefs = useRef([]);
   const cubeRef = useRef(null);
 
   useEffect(() => {
+    // If you still need the 'glowing' effect
     const handleScroll = () => {
       const cubeRect = cubeRef.current?.getBoundingClientRect();
-
-      timelineElementsRefs.current.forEach((timelineYearRef) => {
-        const timelineYearRect = timelineYearRef?.getBoundingClientRect();
-
+      timelineElementsRefs.current.forEach((yearRef) => {
+        const rect = yearRef?.getBoundingClientRect();
         if (
-          timelineYearRect &&
-          cubeRect &&
-          timelineYearRect.left + timelineYearRect.width >= cubeRect.left &&
-          timelineYearRect.left <= cubeRect.left + cubeRect.width &&
-          timelineYearRect.top + timelineYearRect.height >= cubeRect.top &&
-          timelineYearRect.top <= cubeRect.top + cubeRect.height
+          rect && cubeRect &&
+          rect.left + rect.width >= cubeRect.left &&
+          rect.left <= cubeRect.left + cubeRect.width &&
+          rect.top + rect.height >= cubeRect.top &&
+          rect.top <= cubeRect.top + cubeRect.height
         ) {
-          timelineYearRef.classList.add('glowing');
+          yearRef.classList.add('glowing');
         } else {
-          timelineYearRef.classList.remove('glowing');
+          yearRef.classList.remove('glowing');
         }
       });
     };
-
     window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <>
       <div ref={cubeRef} className="cube"></div>
       {timelineElements.map((element, index) => (
-        
+        <div
+          className="timeline"
+          style={{
+            borderColor: getColorClass(element.year),
+            ...(index === timelineElements.length - 1 && { paddingTop: "20px" })
+          }}
+          key={element.id}
+        >
           <div
-            className="timeline"
-            style={{
-              borderColor: getColorClass(element.year),
-              ...(index === timelineElements.length - 1  && { paddingTop: "20px" })
-            }}
-            key={element.id}
+            ref={(ref) => (timelineElementsRefs.current[index] = ref)}
+            className="timeline-year"
           >
-            
-            <div ref={(ref) => (timelineElementsRefs.current[index] = ref)} className="timeline-year">
-              {element.year}
-            </div>
-            <div className=''>
-              <TimelineItem
-                id = {element.id}
-                title={element.title}
-                company={element.company}
-                location={element.location}
-                description={element.description}
-                date={element.date}
-                year={element.year}
-                color={getColorClass(element.year)}
-              />
-            </div>
+            {element.year}
           </div>
+          <TimelineItem
+            title={element.title}
+            company={element.company}
+            location={element.location}
+            description={element.description}
+            date={element.date}
+            color={getColorClass(element.year)}
+          />
+        </div>
       ))}
     </>
   );

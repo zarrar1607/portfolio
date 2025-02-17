@@ -8,8 +8,10 @@
   // margin-left: 15px;
   padding-left: 60px;
   padding-right: 60px;
-}
 
+  position: relative;
+  overflow: hidden; // or visible, depending on desig
+}
 .display-1{
   font-family: 'Bruno Ace SC';
   margin-bottom: 20px;

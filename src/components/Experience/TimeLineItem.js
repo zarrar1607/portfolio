@@ -1,56 +1,53 @@
-import React, { useRef, useEffect, useState } from 'react';
+// TimeLineItem.js
+import React, { useState, useRef, useEffect } from 'react';
 import './TimelineItem.scss';
-import timelineElements from "./timelineElements";
-import { useScroll, animated, useSpring } from '@react-spring/web';
+import { useSpring, animated } from '@react-spring/web';
 
-const TimelineItem = ({ id, title, company, location, description, date, year, color }) => {
-  const [textStyles, textApi] = useSpring(() => ({
-    x: '100%'
-  }));
+const TimelineItem = ({ title, company, location, description, date, color }) => {
+  const [isInView, setIsInView] = useState(false);
+  const itemRef = useRef(null);
 
-  const [scrollProgress, setScrollProgress] = useState(0);
-  const [start, setStart] = useState(0);
-  const [end, setEnd] = useState(0);
-  const [idx, setId] = useState(0);
-
-  const { scrollYProgress } = useScroll({
-    onChange: ({ value: { scrollYProgress } }) => {
-      setScrollProgress(scrollYProgress);
-
-      const itemCount = timelineElements.length;
-      const itemFraction = 1 / itemCount;
-      const start = (itemCount - id) * itemFraction; // Adjust the start position for each item
-      const end = start + itemFraction; // Adjust the end position for each item
-
-      setStart(start);
-      setEnd(end);
-      setId(id);
-
-
-      if (
-        scrollYProgress >= start - 0.05
-        &&
-        scrollYProgress <= end + 0.05
-      ) {
-        textApi.start({ x: '0%' });
-      } else {
-        textApi.start({ x: '100%' });
+  // Set up Intersection Observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Update isInView state if the item is in the viewport
+        if (entry.isIntersecting) {
+          setIsInView(true);
+        }
+      },
+      {
+        threshold: 0.3, // Adjust how much of the element needs to be visible
       }
-    },
-    default: {
-      immediate: true,
-    },
+    );
+
+    if (itemRef.current) {
+      observer.observe(itemRef.current);
+    }
+
+    return () => {
+      if (itemRef.current) {
+        observer.unobserve(itemRef.current);
+      }
+    };
+  }, []);
+
+  // React Spring animation
+  const textStyles = useSpring({
+    // Slide in from the right if in view, otherwise stay off-screen
+    transform: isInView ? 'translateX(0%)' : 'translateX(100%)',
+    opacity: isInView ? 1 : 0,
+    config: { mass: 1, tension: 280, friction: 30 },
   });
 
   return (
-    <div className="timeline-item">
-      <div style={{ overflow: 'hidden' }}>
-        <animated.div style={textStyles}>
-          <div className="content">
-            <h1 className='display-1' style={{ color: color }}>{title}</h1>
-          </div>
+    <div className="timeline-item" ref={itemRef}>
+      <animated.div style={textStyles}>
         <div className="content">
-          <h2 className='display-4'>{company}</h2>
+          <h1 className="display-1" style={{ color: color }}>{title}</h1>
+        </div>
+        <div className="content">
+          <h2 className="display-4">{company}</h2>
         </div>
         <div className="content">
           <h5>{location}, {date}</h5>
@@ -58,8 +55,7 @@ const TimelineItem = ({ id, title, company, location, description, date, year, c
         <div className="content">
           {description}
         </div>
-        </animated.div>
-      </div>
+      </animated.div>
     </div>
   );
 };

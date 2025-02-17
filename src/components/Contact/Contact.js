@@ -37,12 +37,12 @@ const Contact = () => {
                     </Row>
                     <Row className='w-100'>
                         <Col className='' xs={6}>
-                            <a href="mailto:zarrar_1607@gmail.com" rel="noopener noreferrer" target='blank_'>
+                            <a href="mailto:mohammedmisbahzarrar@gmail.com" rel="noopener noreferrer" target='blank_'>
                                 <Image src={ process.env.PUBLIC_URL +'/Icons/Mail.svg'} className='img-fluid icon' rounded />
                             </a>
                         </Col>
                         <Col className=' flex-grow-1 Mail icon_text' xs={6}>
-                            <a href="mailto:zarrar_1607@gmail.com" rel="noopener noreferrer" target='blank_'>
+                            <a href="mailto:mohammedmisbahzarrar@gmail.com" rel="noopener noreferrer" target='blank_'>
                                 E-Mail
                             </a>
                         </Col>

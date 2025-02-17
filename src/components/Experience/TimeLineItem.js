@@ -14,7 +14,7 @@ const TimelineItem = ({ title, company, location, description, date, color }) =>
         setIsInView(entry.isIntersecting);
       },
       {
-        threshold: 0.3, // Adjust how much of the item must be visible
+        threshold: 0.1, // Adjust how much of the item must be visible
       }
     );
 

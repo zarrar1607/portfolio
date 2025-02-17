@@ -2,7 +2,6 @@ import React, { useRef, useEffect, useState } from 'react';
 import './TimelineItem.scss';
 import timelineElements from "./timelineElements";
 import { useScroll, animated, useSpring } from '@react-spring/web';
-import { faStackOverflow } from '@fortawesome/free-brands-svg-icons';
 
 const TimelineItem = ({ id, title, company, location, description, date, year, color }) => {
   const [textStyles, textApi] = useSpring(() => ({
@@ -14,7 +13,6 @@ const TimelineItem = ({ id, title, company, location, description, date, year, c
   const [end, setEnd] = useState(0);
   const [idx, setId] = useState(0);
 
-  const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     onChange: ({ value: { scrollYProgress } }) => {
       setScrollProgress(scrollYProgress);
@@ -58,14 +56,8 @@ const TimelineItem = ({ id, title, company, location, description, date, year, c
           <h5>{location}, {date}</h5>
         </div>
         <div className="content">
-          <p>{description}</p>
+          {description}
         </div>
-        {/* <div className="scroll-progress">
-          ScrollYProgress: {scrollProgress.toFixed(2)},
-          start: {start.toFixed(2)},
-          end: {end.toFixed(2)},
-          idx: {idx.toFixed(2)}
-        </div> */}
         </animated.div>
       </div>
     </div>

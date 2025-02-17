@@ -25,6 +25,7 @@ const getColorClass = (id) => {
     if (year[i] == id)
       return purpleShades[i];
   }
+  return '#858FE0'; //default
 };
 const Experience = () => {
   // const { scrollYProgress } = useScroll();
@@ -69,7 +70,7 @@ const Experience = () => {
             className="timeline"
             style={{
               borderColor: getColorClass(element.year),
-              ...(element.id === timelineElements.length && { paddingTop: "20px" })
+              ...(index === timelineElements.length - 1  && { paddingTop: "20px" })
             }}
             key={element.id}
           >
@@ -77,7 +78,7 @@ const Experience = () => {
             <div ref={(ref) => (timelineElementsRefs.current[index] = ref)} className="timeline-year">
               {element.year}
             </div>
-            <div key={element.id} className=''>
+            <div className=''>
               <TimelineItem
                 id = {element.id}
                 title={element.title}

@@ -1,4 +1,3 @@
-// Experience.js
 import React, { useRef, useEffect } from 'react';
 import TimelineItem from './TimeLineItem';
 import './Experience.scss';
@@ -28,7 +27,7 @@ const Experience = () => {
   const cubeRef = useRef(null);
 
   useEffect(() => {
-    // If you still need the 'glowing' effect
+    // If you need the "glowing" effect for the timeline-year
     const handleScroll = () => {
       const cubeRect = cubeRef.current?.getBoundingClientRect();
       timelineElementsRefs.current.forEach((yearRef) => {

@@ -12,7 +12,7 @@ const getColorClass = (year) => {
     '#7E7FCC',
     '#858FE0', // Lightest shade
   ];
-  const years = [2024, 2023, 2022, 2021, 2020];
+  const years = [2025, 2024, 2023, 2022, 2021, 2020];
 
   for (let i = 0; i < years.length; i++) {
     if (years[i] === year) {

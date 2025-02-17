@@ -1,5 +1,26 @@
 let timelineElements = [
- 
+  {
+    id: 7,
+    company: "Pinnacle Technology",
+    title: "Full-Stack Software Developer",
+    location: "Kansas, United States",
+    description: (
+      <ul>
+        <li>
+          Contribute to the development of hardware-software solutions for preclinical CNS data acquisition, supporting real-time analysis and experimentation on rat/mouse models.
+        </li>
+        <li>
+          Added feature for saving graphs in high-quality DPI Imaging formats (SVG, PDF) using QCP. Fixed the zooming, scaling, and scroll behavior on graphs using QModifiers.
+        </li>
+        <li>
+          Prototyped YOLOv8, SSD MobileNet, and Fast R-CNN for XY tracking of rat detection at ~100 ms inference time on a single-core CPU and deployed in C++. 
+          Investigating DeepSort to enhance real-time object tracking using Kalman Filters.
+        </li>
+      </ul>
+    ),
+    date: "Current",
+    year: 2025,
+  },
   {
     id: 6,
     company: "The University of Kansas",
@@ -8,20 +29,17 @@ let timelineElements = [
     description: (
       <ul>
         <li>
-          Facilitated 2 weekly lab sessions for EECS 673 - Operating Systems,
-          overseeing a class of 40 students each semester.
+          Conducted 2 weekly labs for Operating Systems every semester, overseeing a class of 40 students.
         </li>
         <li>
-          Assisted <strong>Dr. Prasad Kulkarni</strong> and <strong>Dr. Heeechul Yun</strong> in teaching, revising, and grading assignments
-          and exams.
+          Assisted <strong>Dr. Heechul Yun</strong> (Spring 2023, 2024) and <strong>Dr. Prasad Kulkarni</strong> (Fall 2023, 2024) in teaching, exam creation, grading, and proctoring
         </li>
         <li>
-          Fostered an inclusive learning environment by leading group discussions,
-          tailoring individual support to each student's needs, and encouraging
-          participation in class activities.
+          Fostered an inclusive learning environment by leading group discussions, providing tailored student support, 
+          encouraging participation, and designing course modules with examples from the real for optimized understanding and engagement. 
         </li>
         <li>
-          Created and enhancing the subject's website:<br></br>
+          Developed a website for course updates, lab materials,  and resources for students’ accessibility and clarity:<br></br>
           <a href="https://zarrar1607.github.io/KUEECS678-Spring2024/" target="blank">
             <button className="btn" style={{width:'auto', margin:'auto', marginTop:'10px', letterSpacing:'0px'}}>KU EECS678 Operating System Website - Spring2024</button>
           </a>
